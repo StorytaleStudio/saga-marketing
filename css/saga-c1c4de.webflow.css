@@ -551,6 +551,7 @@ a {
   border-radius: 1rem;
   flex-direction: column;
   flex: 1;
+  background-size: cover;
   justify-content: flex-end;
   padding: 1rem;
   display: flex;
