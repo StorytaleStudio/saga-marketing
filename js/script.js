@@ -25,7 +25,7 @@ function generateName() {
     console.log(firstName);
     console.log(lastName);
   
-    const imageResult = `./images/${cultureResult}_${genderResult}_${professionResult}_${artStyle}.png`;
+    const imageResult = `https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722347/saga/${cultureResult}_${genderResult}_${professionResult}_${artStyle}.png`;
   
     // Use a template literal to format the full name
     character.style.backgroundColor = `rgba(0,0,0,0.2)`;
@@ -91,36 +91,53 @@ function generateName() {
     return { data: names };
   }
 
-  function fetchImage(gender, culture, profession, artStyle) {
-    let image = "";
-    const imageResult = `./images/${culture}_${gender}_${profession}_${artStyle}.png`;
-    return
-    // switch(culture){
-    //   case'English':
-    //     switch(gender){
-    //       case'Masculine':
-    //         switch(profession){
-    //           case'Warrior':
-    //             switch(artStyle){
-    //               case'Cyberpunk':
-    //                 image = "./images/english_male_warrior_cyberpunk.png";
-    //               break;
-    //               case'Medieval':
-    //               image = "./images/english_male_warrior_cyberpunk.png";
-    //               break;
-    //               case'Modern':
-    //               image = "./images/english_male_warrior_modern.png";
-    //               break;
-    //             }
-    //           break;
-    //         }
-    //       break;
-    //     }
-    //   break;
-    // }
-  }
   
   function pickRandom(list) {
     return list[Math.floor(Math.random() * list.length)];
   }
   
+  const featureImages = [
+
+  ]
+
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://api.github.com/repos/StorytaleStudio/saga-features/issues?q=is%3Aopen+is%3Aissue+label%3Afeature');
+  const featureGroup = document.querySelector("#features .div-block-11");
+  request.onload = function() {
+    var githubData = JSON.parse(request.responseText);
+    githubData.reverse().forEach(featureCards);
+    
+    console.log(featureGroup)
+    function featureCards(item){
+      featureGroup.innerHTML += `
+      <div class="feature-card">
+        <div class="div-block-13">
+          <h4 class="heading-9">${item.title}</h4>
+          <p class="paragraph-9">${item.body}</p>
+          ${item.labels.some(label => label.name === 'in development')  ?  '<p class="button w-button alt">In Development</p>' : '<a href="' + item.html_url + '" class="button w-button">Vote on this feature</a>'}
+             
+        </div>
+      `
+      console.log(item.title)
+      console.log(item.labels)
+    }
+  }
+request.send();
+
+
+
+  // $(document).ready(function () {
+  //     $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+  //         $("div#github-issues");
+  //         $.each(allIssues, function (i, issue) {
+
+
+  //             $("div#github-issues")
+  //                 .append("<div style=\"margin-bottom:20px;\">")
+  //                 .append("<strong><a href=\"" + issue.html_url + "\">" + issue.title + "</a></strong></br>")
+  //                 .append(issue.body + "</br>")
+  //                 .append(issue.labels + "</br>")
+  //                 .append("</div>");
+  //         });
+  //     });
+  // });
