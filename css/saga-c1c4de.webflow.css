@@ -399,7 +399,7 @@ a {
 }
 
 .feature-card:nth-of-type(1) {
-  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('../images/Rectangle-3467741.png');
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722315/saga/Rectangle-3467741_hseht8.png');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -423,7 +423,7 @@ a {
 
 .feature-card:nth-of-type(2) {
   height: 100%;
-  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('../images/Rectangle-3467743.png');
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722316/saga/Rectangle-3467743_n45yl9.png');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -440,7 +440,7 @@ a {
 }
 
 .feature-card:nth-of-type(3) {
-  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('../images/Rectangle-3467747.png');
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722317/saga/Rectangle-3467747_tluyqx.png');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -453,7 +453,7 @@ a {
 }
 
 .feature-card:nth-of-type(4) {
-  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('../images/Rectangle-3467745.png');
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722316/saga/Rectangle-3467745_omk51v.png');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -713,8 +713,8 @@ a {
 }
 
 .doors {
-  height: 84%;
-  margin-top: 1.6rem;
+  height: 67%;
+  margin-top: 5.4rem;
 }
 
 .doors.left {
