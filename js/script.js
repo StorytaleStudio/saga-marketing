@@ -1,6 +1,5 @@
 function generateName() {
     // Fetch the name
-  
     const character = document.querySelector("#character");
     const characterName = document.querySelector("#name");
     const characterInfo = document.querySelector("#info");
@@ -22,8 +21,6 @@ function generateName() {
     const firstName = pickRandom(firstNames.data);
     const lastName = pickRandom(lastNames.data);
     
-    console.log(firstName);
-    console.log(lastName);
   
     const imageResult = `https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722347/saga/${cultureResult}_${genderResult}_${professionResult}_${artStyle}.png`;
   
@@ -107,19 +104,16 @@ function generateName() {
     var githubData = JSON.parse(request.responseText);
     githubData.reverse().forEach(featureCards);
     
-    console.log(featureGroup)
     function featureCards(item){
       featureGroup.innerHTML += `
       <div class="feature-card">
         <div class="div-block-13">
           <h4 class="heading-9">${item.title}</h4>
           <p class="paragraph-9">${item.body}</p>
-          ${item.labels.some(label => label.name === 'in development')  ?  '<p class="button w-button alt">In Development</p>' : '<a href="' + item.html_url + '" class="button w-button">Vote on this feature</a>'}
+          ${item.labels.some(label => label.name === 'in development')  ?  '<p class="button w-button alt">In Development</p>' : '<a href="' + item.html_url + '" target="_blank" class="button w-button">Vote on this feature</a>'}
              
         </div>
       `
-      console.log(item.title)
-      console.log(item.labels)
     }
   }
 request.send();
