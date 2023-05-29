@@ -21,6 +21,12 @@ function generateName() {
     const firstName = pickRandom(firstNames.data);
     const lastName = pickRandom(lastNames.data);
     
+    const groupName = artStyle === 'Cyberpunk'  ? 'Data Runnerz' :
+                      artStyle === 'Medieval'  ? 'Kingdom of Halena' :
+                      artStyle === 'Wild-West'  ? 'Town of Longfields' :
+                      artStyle === 'Modern'  ? 'Secret Intel Agency' :
+                      'Your Imagination'
+    ;
   
     const imageResult = `https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722347/saga/${cultureResult}_${genderResult}_${professionResult}_${artStyle}.png`;
   
@@ -29,7 +35,7 @@ function generateName() {
     character.style.backgroundImage = `url(${imageResult})`;
     character.style.backgroundBlendMode = "overlay";
     characterName.innerHTML = `${firstName} ${lastName}`;
-    characterInfo.innerHTML = `${cultureResult} ${genderResult} - ${professionResult}`
+    characterInfo.innerHTML = `${cultureResult} ${genderResult} - ${professionResult} of the ${groupName}`
 
   }
   function fetchNames(cultureType, nameType) {
