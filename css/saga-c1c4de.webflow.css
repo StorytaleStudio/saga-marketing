@@ -873,24 +873,41 @@ a {
   .paragraph-13 {
     text-align: center;
   }
+
+  .doorway {
+    background-size: cover;
+  }
+
+  .doors {
+    width:95%;
+    height: 70%;
+    margin-bottom:-7%;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .header {
     flex-wrap: wrap;
     overflow: hidden;
+    justify-content: space-between;
+    grid-template-columns: auto 1fr;
   }
 
   .div-block {
+    display: none;
     opacity: 0;
     flex: none;
-    justify-content: center;
+    justify-content: space-between;
     align-self: center;
   }
 
   .div-block-2, .div-block-3 {
     min-width: 100%;
     justify-content: center;
+  }
+
+  .div-block-3 {
+    margin-left: auto;
   }
 
   .heading {
@@ -967,8 +984,7 @@ a {
 
   .div-block-15 {
     flex-direction: column-reverse;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr;
+    display: flex;
     align-items: flex-end;
   }
 
@@ -977,7 +993,7 @@ a {
   }
 
   .paragraph-13 {
-    text-align: left;
+    text-align: right;
   }
 
   .div-block-18 {
@@ -993,6 +1009,10 @@ a {
 
   .image-8 {
     width: 80%;
+  }
+
+  .tavern-text{
+    margin-top: 8rem;
   }
 }
 
