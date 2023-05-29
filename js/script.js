@@ -1,8 +1,6 @@
 let styleValue = '';
 
 function clickFunction(style) {
-  console.log(style);
-  styleValue = style;
   const medievalCard = document.querySelector(".medieval");
   const wildWestCard = document.querySelector(".wild-west");
   const cyberpunkCard = document.querySelector(".cyberpunk");
@@ -12,25 +10,36 @@ function clickFunction(style) {
     wildWestCard.classList.remove("active");
     cyberpunkCard.classList.remove("active");
     modernCard.classList.remove("active");
-    medievalCard.classList.add("active");
+    medievalCard.classList.toggle("active");
   } else if (style == 'Wild-West') {
     cyberpunkCard.classList.remove("active");
     modernCard.classList.remove("active");
     medievalCard.classList.remove("active");
-    wildWestCard.classList.add("active");
+    wildWestCard.classList.toggle("active");
   } else if (style == 'Cyberpunk' ){
     wildWestCard.classList.remove("active");
     modernCard.classList.remove("active");
     medievalCard.classList.remove("active");
-    cyberpunkCard.classList.add("active");
+    cyberpunkCard.classList.toggle("active");
   } else if (style == 'Modern') {
     wildWestCard.classList.remove("active");
     cyberpunkCard.classList.remove("active");
     medievalCard.classList.remove("active");
-    modernCard.classList.add("active");
+    modernCard.classList.toggle("active");
   }
 
   // perform some operation on click
+  if (style == 'Modern' && modernCard.classList.contains('active')){
+    styleValue = style;
+  } else if (style == 'Wild-West' && wildWestCard.classList.contains('active')) {
+    styleValue = style;
+  } else if (style == 'Cyberpunk' && cyberpunkCard.classList.contains('active')) {
+    styleValue = style;
+  } else if (style == 'Medieval' && medievalCard.classList.contains('active')){
+    styleValue = style;
+  } else {
+    styleValue = '';
+  }
   return styleValue;
 }
 
