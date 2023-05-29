@@ -1,3 +1,39 @@
+let styleValue = '';
+
+function clickFunction(style) {
+  console.log(style);
+  styleValue = style;
+  const medievalCard = document.querySelector(".medieval");
+  const wildWestCard = document.querySelector(".wild-west");
+  const cyberpunkCard = document.querySelector(".cyberpunk");
+  const modernCard = document.querySelector(".modern");
+
+  if(style == 'Medieval') {
+    wildWestCard.classList.remove("active");
+    cyberpunkCard.classList.remove("active");
+    modernCard.classList.remove("active");
+    medievalCard.classList.add("active");
+  } else if (style == 'Wild-West') {
+    cyberpunkCard.classList.remove("active");
+    modernCard.classList.remove("active");
+    medievalCard.classList.remove("active");
+    wildWestCard.classList.add("active");
+  } else if (style == 'Cyberpunk' ){
+    wildWestCard.classList.remove("active");
+    modernCard.classList.remove("active");
+    medievalCard.classList.remove("active");
+    cyberpunkCard.classList.add("active");
+  } else if (style == 'Modern') {
+    wildWestCard.classList.remove("active");
+    cyberpunkCard.classList.remove("active");
+    medievalCard.classList.remove("active");
+    modernCard.classList.add("active");
+  }
+
+  // perform some operation on click
+  return styleValue;
+}
+
 function generateName() {
     // Fetch the name
     const character = document.querySelector("#character");
@@ -9,14 +45,16 @@ function generateName() {
     var cultureValue = c.value;
     var p = document.getElementById("profession-select");
     var professionValue = p.value;
+    
     const genderResult = genderValue || pickRandom(['Feminine', 'Masculine', 'Non-Binary']);
     const cultureResult = cultureValue || pickRandom(['English', "Japanese", "Polynesian"]);
     const professionResult = professionValue || pickRandom(['Warrior', 'Mage', 'Commoner']);
-    const artStyle = pickRandom(['Cyberpunk', 'Medieval', 'Modern', 'Wild-West'])
-    
+    const artStyle = styleValue || pickRandom(['Cyberpunk', 'Medieval', 'Modern', 'Wild-West'])
+   
     const firstNames = fetchNames(cultureResult, genderResult);
     const lastNames = fetchNames(cultureResult, 'surnames');
-  
+   
+
     // Pick a random name from each list
     const firstName = pickRandom(firstNames.data);
     const lastName = pickRandom(lastNames.data);
@@ -24,7 +62,7 @@ function generateName() {
     const groupName = artStyle === 'Cyberpunk'  ? 'Data Runnerz' :
                       artStyle === 'Medieval'  ? 'Kingdom of Halena' :
                       artStyle === 'Wild-West'  ? 'Town of Longfields' :
-                      artStyle === 'Modern'  ? 'Secret Intel Agency' :
+                      artStyle === 'Modern'  ? 'League of Subtle Spheres' :
                       'Your Imagination'
     ;
   
