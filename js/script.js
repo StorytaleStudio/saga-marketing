@@ -82,7 +82,7 @@ function generateName() {
     character.style.backgroundImage = `url(${imageResult})`;
     character.style.backgroundBlendMode = "overlay";
     characterName.innerHTML = `${firstName} ${lastName}`;
-    characterInfo.innerHTML = `${cultureResult} ${genderResult} - ${professionResult} of the ${groupName}`
+    characterInfo.innerHTML = `${cultureResult} ${genderResult} - ${professionResult} from the ${groupName}`
 
   }
   function fetchNames(cultureType, nameType) {
