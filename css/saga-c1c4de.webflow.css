@@ -327,23 +327,26 @@ a {
 }
 
 .heading-7 {
-  width: 100%;
   opacity: .2;
   white-space: nowrap;
-  flex: none;
   font-family: Pirata One, sans-serif;
-  font-size: 9rem;
+  font-size: 10vw;
   font-weight: 400;
   display: block;
   overflow: visible;
 }
 
-.div-block-8 {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.marquee {
   display: flex;
   overflow: hidden;
+  user-select: none;
+}
+
+.div-block-8 {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
 }
 
 .div-block-9 {
