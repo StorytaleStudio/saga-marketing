@@ -79,9 +79,10 @@ a {
 
 .div-block-3 {
   min-width: 15rem;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
   align-items: center;
+  justify-content: flex-end;
   display: flex;
 }
 
@@ -188,7 +189,7 @@ a {
 .heading-2 {
   width: 100%;
   font-weight: 400;
-  line-height: .8;
+  line-height: 0.9;
   position: static;
 }
 
@@ -221,7 +222,7 @@ a {
   text-align: center;
   font-size: 5rem;
   font-weight: 500;
-  line-height: .8;
+  line-height: 0.9;
   margin-top: 5rem;
 }
 
