@@ -120,6 +120,10 @@ a {
   width: 1rem;
 }
 
+.link-basic:hover{
+  text-decoration: underline;
+}
+
 
 .tavern {
   z-index: 2;
@@ -129,6 +133,49 @@ a {
   min-height: 100dvh;
   object-fit: cover;
   position: absolute;
+}
+
+.btn-para{
+  background: none;
+}
+
+.btn-para:hover{
+  text-decoration: underline;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #333;
+  max-width: 40ch;
+  padding: 24px;
+  border-radius: 4px;
+  color: white;
+  position: fixed;
+  bottom: 10%;
+  /* left: 10%; */
+  right: 5%;
+  text-align: left;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .heading {
