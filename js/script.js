@@ -75,7 +75,9 @@ function generateName() {
                       'Your Imagination'
     ;
   
-    const imageResult = `https://res.cloudinary.com/dy4kfy1on/image/upload/v1684722347/saga/${cultureResult}_${genderResult}_${professionResult}_${artStyle}.png`;
+    const imageResult = `https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/saga/${cultureResult}_${genderResult}_${professionResult}_${artStyle}`;
+
+   
   
     // Use a template literal to format the full name
     character.style.backgroundColor = `rgba(0,0,0,0.2)`;
