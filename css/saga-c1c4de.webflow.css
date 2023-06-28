@@ -458,7 +458,7 @@ a:hover {
 }
 
 .feature-card:nth-of-type(1) {
-  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto//Rectangle-3467741_hseht8');
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/saga/Rectangle-3467741_hseht8');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
