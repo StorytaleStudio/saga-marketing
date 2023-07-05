@@ -354,7 +354,8 @@ a:hover {
 
 .image-4 {
   width: 22rem;
-
+  height: 100%;
+  aspect-ratio: 1/1;
   margin-top: -2rem;
 }
 
