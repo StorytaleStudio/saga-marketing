@@ -354,7 +354,8 @@ a:hover {
 
 .image-4 {
   width: 22rem;
-  height: 22rem;
+  height: 100%;
+  aspect-ratio: 1/1;
   margin-top: -2rem;
 }
 
@@ -1008,7 +1009,7 @@ a:hover {
 
   .image-4 {
     width: 12rem;
-    height:12rem;
+    height:100%;
   }
 
   .heading-6 {
