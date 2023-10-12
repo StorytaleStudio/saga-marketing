@@ -414,6 +414,8 @@ a:hover {
 .upcoming-features {
   padding-left: 4rem;
   padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .heading-8 {
