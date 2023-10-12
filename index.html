@@ -279,6 +279,13 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+//stop lenis 
+lenis.stop();
+
+//reload lenis animations
+$(document).ready(function(){lenis.start();})
+
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
   markers: false
