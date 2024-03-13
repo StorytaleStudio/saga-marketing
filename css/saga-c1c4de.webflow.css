@@ -851,8 +851,15 @@ a:hover {
   left: 0;
 }
 
-
+.scroll-image {
+  width: 2rem;
 }
+
+.logo-footer {
+  width: 25%;
+  min-width: 10rem;
+}
+
 .character-block h2{
   position: absolute;
   top: -1.5rem;
