@@ -207,7 +207,7 @@ li {
   z-index: 2;
 }
 
-a:hover {
+.body a:hover {
   text-decoration: underline;
 }
 
