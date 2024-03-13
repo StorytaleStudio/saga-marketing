@@ -136,6 +136,16 @@ li {
 }
 
 .link-block, .link-block-2 {
+    padding: 0.75rem;
+  }
+  
+  .link-block-2 svg,
+  .link-block svg {
+    width: 1rem;
+  }
+  
+  .link-basic:hover{
+    text-decoration: underline;
   padding: 1rem;
 }
 
@@ -143,9 +153,51 @@ li {
   z-index: 2;
   width: 100%;
   height: 100%;
+  margin-top:2.125rem;
   min-height: 100dvh;
   object-fit: cover;
   position: absolute;
+}
+
+.btn-para{
+  background: none;
+}
+
+.btn-para:hover{
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #333;
+  max-width: 40ch;
+  padding: 24px;
+  border-radius: 4px;
+  color: white;
+  position: fixed;
+  bottom: 10%;
+  /* left: 10%; */
+  right: 5%;
+  text-align: left;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .heading {
@@ -239,7 +291,8 @@ li {
   text-align: center;
   font-size: 5rem;
   font-weight: 500;
-  line-height: .8;
+  line-height: 0.9;
+  margin-top: 5rem;
 }
 
 .paragraph-3 {
@@ -322,6 +375,8 @@ li {
 
 .image-4 {
   width: 22rem;
+  height: 100%;
+  aspect-ratio: 1/1;
   margin-top: -2rem;
 }
 
@@ -349,16 +404,23 @@ li {
   white-space: nowrap;
   flex: none;
   font-family: Pirata One, sans-serif;
-  font-size: 9rem;
+  font-size: 10vwrem;
   font-weight: 400;
   display: block;
   overflow: visible;
 }
 
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
 .div-block-8 {
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-around;
+  min-width: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -378,6 +440,8 @@ li {
 .upcoming-features {
   padding-left: 4rem;
   padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .heading-8 {
@@ -423,8 +487,8 @@ li {
   display: grid;
 }
 
-.div-block-12 {
-  background-image: linear-gradient(to bottom, var(--grey-fade), var(--grey-fade)), url('../images/Rectangle-3467741.webp');
+.feature-card:nth-of-type(1) {
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/saga/Rectangle-3467741_hseht8');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -446,9 +510,9 @@ li {
   margin-top: 20rem;
 }
 
-.div-block-12-copy {
+.feature-card:nth-of-type(2) {
   height: 100%;
-  background-image: linear-gradient(to bottom, var(--grey-fade), var(--grey-fade)), url('../images/Rectangle-3467743.webp');
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/saga/Rectangle-3467743_n45yl9');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -464,8 +528,8 @@ li {
   width: 60%;
 }
 
-.feature-card {
-  background-image: linear-gradient(to bottom, var(--grey-fade), var(--grey-fade)), url('../images/Rectangle-3467747.webp');
+.feature-card:nth-of-type(3) {
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/saga/Rectangle-3467747_tluyqx');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -477,8 +541,8 @@ li {
   display: flex;
 }
 
-.feature-card-4 {
-  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('../images/Rectangle-3467745.webp');
+.feature-card:nth-of-type(4) {
+  background-image: linear-gradient(rgba(49, 49, 49, .6), rgba(49, 49, 49, .6)), url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/saga/Rectangle-3467745_omk51v');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -492,6 +556,7 @@ li {
 
 .paragraph-8, .paragraph-9, .paragraph-10 {
   width: 60%;
+  margin-bottom: 1rem;
 }
 
 .footer {
@@ -507,10 +572,15 @@ li {
 
 .image-5 {
   width: 10rem;
+  height: 100%;
 }
 
 .paragraph-11 {
   font-size: 2rem;
+}
+
+.paragraph-13.copy {
+  text-align: center;
 }
 
 .div-block-14 {
@@ -580,7 +650,7 @@ li {
   display: grid;
 }
 
-.div-block-19 {
+.character-block  {
   width: 50%;
   border-radius: 1rem;
   flex-direction: column;
@@ -588,6 +658,8 @@ li {
   justify-content: flex-end;
   padding: 1rem;
   display: flex;
+  background-size: cover;
+  transition: 0.8s all ease-in-out;
 }
 
 .form-block {
