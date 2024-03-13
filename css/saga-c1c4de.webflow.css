@@ -767,7 +767,7 @@ a:hover {
 }
 
 .heading-12 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -778,6 +778,7 @@ a:hover {
 
 .link-block-4, .link-block-4.w--current {
   width: 5rem;
+  min-width: 80px;
 }
 
 .doorway {
@@ -786,6 +787,10 @@ a:hover {
   min-height: 100vh;
   position: relative;
   top: 0;
+  background: url('https://res.cloudinary.com/dy4kfy1on/image/upload/f_auto,q_auto/Saga_Doorway_jl1og1');
+  background-position: center 2rem ;
+  background-size: 100% 95%;
+  background-repeat: no-repeat;
 }
 
 .door-left, .door-right {
@@ -811,8 +816,9 @@ a:hover {
 }
 
 .doors {
-  height: 84%;
-  margin-top: 1.6rem;
+  width: 15.625%;
+  height: 63.8996%;
+  margin-bottom: -3%;
 }
 
 .doors.left {
@@ -844,6 +850,121 @@ a:hover {
   top: 0;
   left: 0;
 }
+
+
+}
+.character-block h2{
+  position: absolute;
+  top: -1.5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  width: calc(100% - 2rem);
+  margin: 0;
+  text-align: center;
+  color: #cf4a00;
+  transition: 0.8s all ease-in-out;
+  opacity: 0;
+}
+
+.character-block p:not(:empty) + h2 {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1920px) {
+  .paragraph-5 {
+    width: 35%;
+  }
+}
+
+  @media screen and (max-width: 991px) {
+    .button {
+      text-align: center;
+    }
+  
+    .heading-4 {
+      font-size: 11rem;
+    }
+  
+    .div-block-9 {
+      flex-direction: column;
+    }
+  
+    .character-block {
+      width: 100%;
+      min-height: 35vh;
+    }
+  
+    .heading-8 {
+      width: 100%;
+      font-size: 9rem;
+    }
+  
+    .text-span-2 {
+      transform: translate(0, -1.3rem);
+    }
+  
+    .div-block-10 {
+      flex-direction: column;
+    }
+    .paragraph-5 {
+      width: 100%;
+    }
+    .div-block-11 {
+      grid-template-columns: 1fr;
+    }
+    .div-block-14 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .div-block-15 {
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-columns: 1fr;
+      display: grid;
+    }
+    .paragraph-13 {
+      text-align: center;
+    }
+    .doorway {
+      background-size: cover;
+    }
+    .doors {
+      width:95%;
+      height: 70%;
+      margin-bottom:-7%;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .header {
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: space-between;
+      grid-template-columns: auto 1fr;
+    }
+    .div-block {
+      display: none;
+      opacity: 0;
+      flex: none;
+      justify-content: space-between;
+      align-self: center;
+    }
+    .div-block-2, .div-block-3 {
+      min-width: 100%;
+      justify-content: center;
+    }
+    .div-block-3 {
+      margin-left: auto;
+    }
+    .heading {
+      font-size: 4rem;
+    }
+    .paragraph {
+      width: 80%;
+    }
+  }
 
 .section {
   min-height: 100svh;
