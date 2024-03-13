@@ -32,6 +32,33 @@
 .splide:focus {
 	cursor: grabbing;
 }
+
+body {
+    scroll-behavior: smooth;
+  }
+  
+  html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+   scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
 </style>
 </head>
 <body class="body">
@@ -274,25 +301,21 @@ ScrollTrigger.defaults({
   markers: false
 });
 
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
-      infinite: false,
-      direction: 'vertical',
-    })
-  
-    lenis.on('scroll', (e) => {
-      console.log(e)
-    })
-  
-    lenis.on('scroll', ScrollTrigger.update)
-  
-    gsap.ticker.add((time)=>{
-      lenis.raf(time * 1000)
-    })
-  
-    gsap.ticker.lagSmoothing(0)
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+    infinite: false,
+    direction: 'vertical',
+  })
+
+  lenis.on('scroll', ScrollTrigger.update)
+
+  gsap.ticker.add((time)=>{
+    lenis.raf(time * 1000)
+  })
+
+  gsap.ticker.lagSmoothing(0)
   </script>
   <script>
 let st = ScrollTrigger.create({
