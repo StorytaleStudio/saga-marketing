@@ -399,10 +399,8 @@ a:hover {
 }
 
 .heading-7 {
-  width: 100%;
-  opacity: 0.2;
+  opacity: .2;
   white-space: nowrap;
-  flex: none;
   font-family: Pirata One, sans-serif;
   font-size: 10vw;
   font-weight: 400;
