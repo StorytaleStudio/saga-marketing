@@ -419,6 +419,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   min-width: 100%;
+  max-width: 100vw;
 }
 
 .div-block-9 {
