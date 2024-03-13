@@ -13,6 +13,14 @@
   --barbarian-pink: #ff32a1;
 }
 
+::-webkit-scrollbar {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--saga-orange);
+}
+
 body {
   color: #fff;
   font-family: Founders grotesk, sans-serif;
