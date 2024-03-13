@@ -459,6 +459,20 @@
 	margin-left: 2ch;
 	font-size: 0.5em;
 }
+
+[coming-soon="true"] {
+	opacity: 0.4;
+	pointer-events: none;
+  }
+[coming-soon="true"] .subclass-name:after,
+.strike:after{
+	content: "Coming Soon";
+	margin-left: 2ch;
+	font-size: 0.5em;
+}
+[coming-soon="true"] .tag-line {
+	display: none;
+}
 </style>
         </div>
       </nav>
