@@ -2518,7 +2518,7 @@ li {
   min-height: 100svh;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  opacity: .65;
+  opacity: 0.0;
   color: #fff;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
