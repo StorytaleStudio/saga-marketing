@@ -154,6 +154,11 @@ li {
   .link-block svg {
     width: 1rem;
   }
+
+  .link-block-2:hover svg,
+  .link-block:hover svg {
+    transform: rotate(5deg);
+  }
   
   .link-basic:hover{
     text-decoration: underline;
