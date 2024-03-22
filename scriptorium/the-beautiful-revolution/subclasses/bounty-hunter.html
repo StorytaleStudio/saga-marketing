@@ -1,0 +1,1213 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Wed Mar 13 2024 02:07:54 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65c188d0e9db2aa3b5b37dea" data-wf-site="645c8255da9f4f0a53c334fa" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bounty Hunter | Ranger Sub Class for 5th Edition Dungeons and Dragons</title>
+  <meta content="Become the bounty hunter that strikes first and stops at nothing to get their mark. This ranger subclass is for 5th edition Dungeons and Dragons." name="description">
+  <meta content="Bounty Hunter | Ranger Sub Class for 5th Edition Dungeons and Dragons" property="og:title">
+  <meta content="Become the bounty hunter that strikes first and stops at nothing to get their mark. This ranger subclass is for 5th edition Dungeons and Dragons." property="og:description">
+  <meta content="Bounty Hunter | Ranger Sub Class for 5th Edition Dungeons and Dragons" property="twitter:title">
+  <meta content="Become the bounty hunter that strikes first and stops at nothing to get their mark. This ranger subclass is for 5th edition Dungeons and Dragons." property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/saga-c1c4de.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Pirata One:regular"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../../../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="../../../images/webclip.png" rel="apple-touch-icon">
+  <style>
+  @media screen and (min-width: 2560px) {
+  :root {
+    font-size: calc(1rem + ((1vw - 5.68px) * 0.5426));
+  }
+}
+</style>
+  <style>
+  ::-webkit-scrollbar {
+    background: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  body {
+    scroll-behavior: smooth;
+  }
+  html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+   scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+.nonactive {
+	overflow: hidden;
+}
+.nav-menu, 
+.w-nav-overlay {
+	/*height: 100vh !important;*/
+	/*overflow: auto;*/
+}
+</style>
+</head>
+<body class="dark">
+  <div data-animation="over-right" class="navbar-2 w-nav" data-easing2="ease" data-lenis-prevent="" data-easing="ease" data-collapse="all" role="banner" data-no-scroll="1" data-duration="400">
+    <div class="div-block-51">
+      <a href="../../../scriptorium/the-beautiful-revolution/subclasses/subclasses-of-the-beautiful-revolution.html" class="link-block-5 w-inline-block"><img loading="lazy" src="../../../images/arrow-left-circle.svg" alt="">
+        <div class="text-block-22">Back</div>
+      </a>
+      <div class="div-block-52">
+        <a id="w-node-_8ae7f1f1-9d50-e50f-b561-4072173dbedf-173dbed8" href="../../../index.html" class="w-nav-brand"><img loading="lazy" src="../../../images/Saga.svg" alt="" class="image-18"></a>
+        <div id="w-node-_8ae7f1f1-9d50-e50f-b561-4072173dbee1-173dbed8" class="class-nav">
+          <ul role="list" class="list menu-list w-list-unstyled">
+            <li>
+              <a href="#key-features" class="link overview-link menu-link">Key Feature</a>
+            </li>
+            <li>
+              <a href="#levels" class="link menu-link">Class Features</a>
+            </li>
+            <li>
+              <a href="#roleplay" class="link menu-link">Roleplay</a>
+            </li>
+            <li>
+              <a href="#story" class="link menu-link">Story</a>
+            </li>
+            <li>
+              <a href="#download" class="link menu-link">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-button" class="menu-button w-nav-button">
+        <div class="text-block-23 menu">Menu</div>
+        <div class="text-block-23 close">Close</div><img src="../../../images/mob-menu-close.svg" loading="lazy" alt="" class="mob-menu close"><img src="../../../images/mob-menu.svg" loading="lazy" alt="" class="mob-menu menu">
+      </div>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <div class="nav-wrapper">
+          <div class="core-nav">
+            <a href="../../../index.html" class="w-inline-block"><img loading="lazy" src="../../../images/Saga.svg" alt="" class="image-18-copy"></a>
+            <a href="../../../index.html" class="nav-link w-nav-link">Home</a>
+            <a href="https://beta.saga.quest" class="nav-link w-nav-link">App</a>
+            <a href="../../../index.html" class="nav-link w-nav-link">About</a>
+            <a href="#" class="button-3 selected w-button">Scriptorium</a>
+          </div>
+          <div class="scriptorium">
+            <div class="div-block-55">
+              <div class="text-block-27">The Beautiful Revolution</div>
+              <a href="#" class="button-3 strike w-button">Classes</a>
+              <div data-w-id="8ae7f1f1-9d50-e50f-b561-4072173dbf0c" class="button-3 selected">
+                <div> Subclasses</div>
+              </div>
+              <a href="#" class="button-3 strike w-button">Spells</a>
+              <a href="#" class="button-3 strike w-button">Items</a>
+              <a href="#" class="button-3 strike w-button">Setting</a>
+            </div>
+            <div class="subclasses">
+              <a coming-soon="true" color="pink" href="../../../scriptorium/the-beautiful-revolution/subclasses/path-of-the-socialite.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/hero-barb.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467699-p-500.png 500w, ../../../images/Rectangle-3467699-p-800.png 800w, ../../../images/Rectangle-3467699-p-1080.png 1080w, ../../../images/hero-barb.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467739.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467739-p-500.png 500w, ../../../images/Rectangle-3467739-p-800.png 800w, ../../../images/Rectangle-3467739-p-1080.png 1080w, ../../../images/Rectangle-3467739.webp 1360w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467734.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467734-p-500.png 500w, ../../../images/Rectangle-3467734-p-800.png 800w, ../../../images/Rectangle-3467734-p-1080.png 1080w, ../../../images/Rectangle-3467734.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467725.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467725-p-500.png 500w, ../../../images/Rectangle-3467725-p-800.png 800w, ../../../images/Rectangle-3467725-p-1080.png 1080w, ../../../images/Rectangle-3467725.webp 1538w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Barbarian</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Path of the Socialite</div>
+                    <p class="tag-line">Tear your enemies apart with your words and talk them into an early grave.</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="purple" href="../../../scriptorium/the-beautiful-revolution/subclasses/college-of-propaganda.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467798.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467798-p-500.png 500w, ../../../images/Rectangle-3467798-p-800.png 800w, ../../../images/Rectangle-3467798-p-1080.png 1080w, ../../../images/Rectangle-3467798.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467801.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467801-p-500.png 500w, ../../../images/Rectangle-3467801-p-800.png 800w, ../../../images/Rectangle-3467801-p-1080.png 1080w, ../../../images/Rectangle-3467801.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467802.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467802-p-500.png 500w, ../../../images/Rectangle-3467802-p-800.png 800w, ../../../images/Rectangle-3467802-p-1080.png 1080w, ../../../images/Rectangle-3467802.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467799.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467799-p-500.png 500w, ../../../images/Rectangle-3467799-p-800.png 800w, ../../../images/Rectangle-3467799-p-1080.png 1080w, ../../../images/Rectangle-3467799.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Bard</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">College of Propaganda</div>
+                    <p class="tag-line">The truth is whatever you decide it to be</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="pink" href="../../../scriptorium/the-beautiful-revolution/subclasses/heresy-domain.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467888.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467888-p-500.png 500w, ../../../images/Rectangle-3467888-p-800.png 800w, ../../../images/Rectangle-3467888-p-1080.png 1080w, ../../../images/Rectangle-3467888.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467748.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467748-p-500.png 500w, ../../../images/Rectangle-3467748-p-800.png 800w, ../../../images/Rectangle-3467748-p-1080.png 1080w, ../../../images/Rectangle-3467748.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467746.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467746-p-500.png 500w, ../../../images/Rectangle-3467746-p-800.png 800w, ../../../images/Rectangle-3467746-p-1080.png 1080w, ../../../images/Rectangle-3467746.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467754.webp" loading="lazy" alt="" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Cleric</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Heresy Domain</div>
+                    <p class="tag-line">Cast out the false prophets and lead in the people in reformation</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="green" href="../../../scriptorium/the-beautiful-revolution/subclasses/circle-of-fields.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467816.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467816-p-500.png 500w, ../../../images/Rectangle-3467816-p-800.png 800w, ../../../images/Rectangle-3467816-p-1080.png 1080w, ../../../images/Rectangle-3467816.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467822.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467822-p-500.png 500w, ../../../images/Rectangle-3467822-p-800.png 800w, ../../../images/Rectangle-3467822-p-1080.png 1080w, ../../../images/Rectangle-3467822.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467818.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467818-p-500.png 500w, ../../../images/Rectangle-3467818-p-800.png 800w, ../../../images/Rectangle-3467818-p-1080.png 1080w, ../../../images/Rectangle-3467818.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467817.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467817-p-500.png 500w, ../../../images/Rectangle-3467817-p-800.png 800w, ../../../images/Rectangle-3467817-p-1080.png 1080w, ../../../images/Rectangle-3467817.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Druid</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Circle of Fields</div>
+                    <p class="tag-line">Protect the community and harvest those who seek its demise</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="orange" href="../../../scriptorium/the-beautiful-revolution/subclasses/the-specialist.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467869.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467869-p-500.png 500w, ../../../images/Rectangle-3467869-p-800.png 800w, ../../../images/Rectangle-3467869-p-1080.png 1080w, ../../../images/Rectangle-3467869.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467871.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467871-p-500.png 500w, ../../../images/Rectangle-3467871-p-800.png 800w, ../../../images/Rectangle-3467871-p-1080.png 1080w, ../../../images/Rectangle-3467871.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467875.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467875-p-500.png 500w, ../../../images/Rectangle-3467875-p-800.png 800w, ../../../images/Rectangle-3467875-p-1080.png 1080w, ../../../images/Rectangle-3467875.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467873.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467873-p-500.png 500w, ../../../images/Rectangle-3467873-p-800.png 800w, ../../../images/Rectangle-3467873-p-1080.png 1080w, ../../../images/Rectangle-3467873.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Fighter</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">The Specialist</div>
+                    <p class="tag-line">Focus on doing one thing and doing it well.</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="yellow" href="../../../scriptorium/the-beautiful-revolution/subclasses/way-of-the-gentry.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467837.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467837-p-500.png 500w, ../../../images/Rectangle-3467837-p-800.png 800w, ../../../images/Rectangle-3467837-p-1080.png 1080w, ../../../images/Rectangle-3467837.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467835.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467835-p-500.png 500w, ../../../images/Rectangle-3467835-p-800.png 800w, ../../../images/Rectangle-3467835-p-1080.png 1080w, ../../../images/Rectangle-3467835.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467833.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467833-p-500.png 500w, ../../../images/Rectangle-3467833-p-800.png 800w, ../../../images/Rectangle-3467833-p-1080.png 1080w, ../../../images/Rectangle-3467833.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467832.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467832-p-500.png 500w, ../../../images/Rectangle-3467832-p-800.png 800w, ../../../images/Rectangle-3467832-p-1080.png 1080w, ../../../images/Rectangle-3467832.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Monk</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Way of the Gentry</div>
+                    <p class="tag-line">Solve problems with money, for everything else a good fisticuff will do</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="orange" href="../../../scriptorium/the-beautiful-revolution/subclasses/oath-of-inquisition.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467880.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467880-p-500.png 500w, ../../../images/Rectangle-3467880-p-800.png 800w, ../../../images/Rectangle-3467880-p-1080.png 1080w, ../../../images/Rectangle-3467880.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467877.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467877-p-500.png 500w, ../../../images/Rectangle-3467877-p-800.png 800w, ../../../images/Rectangle-3467877-p-1080.png 1080w, ../../../images/Rectangle-3467877.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467884.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467884-p-500.png 500w, ../../../images/Rectangle-3467884-p-800.png 800w, ../../../images/Rectangle-3467884-p-1080.png 1080w, ../../../images/Rectangle-3467884.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467881.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467881-p-500.png 500w, ../../../images/Rectangle-3467881-p-800.png 800w, ../../../images/Rectangle-3467881-p-1080.png 1080w, ../../../images/Rectangle-3467881.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Paladin</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Oath of Inquisition</div>
+                    <p class="tag-line">Seek out the enemy and purge their heresy from the land</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="false" color="yellow" href="../../../scriptorium/the-beautiful-revolution/subclasses/bounty-hunter.html" aria-current="page" class="subclass-menu-link pink w-inline-block w--current">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/bounty-hunter-current.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/bounty-hunter-current-p-500.png 500w, ../../../images/bounty-hunter-current-p-800.png 800w, ../../../images/bounty-hunter-current-p-1080.png 1080w, ../../../images/bounty-hunter-current.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467711.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467711-p-500.png 500w, ../../../images/Rectangle-3467711-p-800.png 800w, ../../../images/Rectangle-3467711-p-1080.png 1080w, ../../../images/Rectangle-3467711.webp 1439w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467722.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467722-p-500.png 500w, ../../../images/Rectangle-3467722-p-800.png 800w, ../../../images/Rectangle-3467722-p-1080.png 1080w, ../../../images/Rectangle-3467722.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467724.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467724-p-500.png 500w, ../../../images/Rectangle-3467724-p-800.png 800w, ../../../images/Rectangle-3467724-p-1080.png 1080w, ../../../images/Rectangle-3467724.webp 1442w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Ranger</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Bounty Hunter</div>
+                    <p class="tag-line">Stop at nothing to track down and bring your marks in dead or alive.</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="purple" href="../../../scriptorium/the-beautiful-revolution/subclasses/con-artist.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467830.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467830-p-500.png 500w, ../../../images/Rectangle-3467830-p-800.png 800w, ../../../images/Rectangle-3467830-p-1080.png 1080w, ../../../images/Rectangle-3467830.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467823.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467823-p-500.png 500w, ../../../images/Rectangle-3467823-p-800.png 800w, ../../../images/Rectangle-3467823-p-1080.png 1080w, ../../../images/Rectangle-3467823.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467831.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467831-p-500.png 500w, ../../../images/Rectangle-3467831-p-800.png 800w, ../../../images/Rectangle-3467831-p-1080.png 1080w, ../../../images/Rectangle-3467831.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467827.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467827-p-500.png 500w, ../../../images/Rectangle-3467827-p-800.png 800w, ../../../images/Rectangle-3467827-p-1080.png 1080w, ../../../images/Rectangle-3467827.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Rogue</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Con Artist</div>
+                    <p class="tag-line">Let the fates decide what happens next and put on the grandest show of all</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="green" href="../../../scriptorium/the-beautiful-revolution/subclasses/augmentation-origin.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467698-1.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467698-1-p-500.png 500w, ../../../images/Rectangle-3467698-1-p-800.png 800w, ../../../images/Rectangle-3467698-1-p-1080.png 1080w, ../../../images/Rectangle-3467698-1.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467855.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467855-p-500.png 500w, ../../../images/Rectangle-3467855-p-800.png 800w, ../../../images/Rectangle-3467855-p-1080.png 1080w, ../../../images/Rectangle-3467855.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467858.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467858-p-500.png 500w, ../../../images/Rectangle-3467858-p-800.png 800w, ../../../images/Rectangle-3467858-p-1080.png 1080w, ../../../images/Rectangle-3467858.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467861.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467861-p-500.png 500w, ../../../images/Rectangle-3467861-p-800.png 800w, ../../../images/Rectangle-3467861-p-1080.png 1080w, ../../../images/Rectangle-3467861.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Sorcerer</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">Augmentation Origin</div>
+                    <p class="tag-line">Let the fates decide what happens next and put on the grandest show of all</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="blue" href="../../../scriptorium/the-beautiful-revolution/subclasses/the-handler.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467698-4.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467698-4-p-500.png 500w, ../../../images/Rectangle-3467698-4-p-800.png 800w, ../../../images/Rectangle-3467698-4-p-1080.png 1080w, ../../../images/Rectangle-3467698-4.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467850.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467850-p-500.png 500w, ../../../images/Rectangle-3467850-p-800.png 800w, ../../../images/Rectangle-3467850-p-1080.png 1080w, ../../../images/Rectangle-3467850.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467852.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467852-p-500.png 500w, ../../../images/Rectangle-3467852-p-800.png 800w, ../../../images/Rectangle-3467852-p-1080.png 1080w, ../../../images/Rectangle-3467852.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467847.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467847-p-500.png 500w, ../../../images/Rectangle-3467847-p-800.png 800w, ../../../images/Rectangle-3467847-p-1080.png 1080w, ../../../images/Rectangle-3467847.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Warlock</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">The Handler</div>
+                    <p class="tag-line">An unstoppable killing machine that uses anything at their disposal, while looking suave.</p>
+                  </div>
+                </div>
+              </a>
+              <a coming-soon="true" color="blue" href="../../../scriptorium/the-beautiful-revolution/subclasses/school-of-romanticism.html" class="subclass-menu-link pink w-inline-block">
+                <div class="subclass-image-container">
+                  <div class="subclass-image-1"><img src="../../../images/Rectangle-3467812.webp" loading="lazy" alt="" sizes="100vw" srcset="../../../images/Rectangle-3467812-p-500.png 500w, ../../../images/Rectangle-3467812-p-800.png 800w, ../../../images/Rectangle-3467812-p-1080.png 1080w, ../../../images/Rectangle-3467812.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-2"><img src="../../../images/Rectangle-3467808.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467808-p-500.png 500w, ../../../images/Rectangle-3467808-p-800.png 800w, ../../../images/Rectangle-3467808-p-1080.png 1080w, ../../../images/Rectangle-3467808.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-3"><img src="../../../images/Rectangle-3467811.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467811-p-500.png 500w, ../../../images/Rectangle-3467811-p-800.png 800w, ../../../images/Rectangle-3467811-p-1080.png 1080w, ../../../images/Rectangle-3467811.webp 1440w" class="image-21"></div>
+                  <div class="subclass-image-4"><img src="../../../images/Rectangle-3467813.webp" loading="lazy" alt="" sizes="320px" srcset="../../../images/Rectangle-3467813-p-500.png 500w, ../../../images/Rectangle-3467813-p-800.png 800w, ../../../images/Rectangle-3467813-p-1080.png 1080w, ../../../images/Rectangle-3467813.webp 1440w" class="image-21"></div>
+                </div>
+                <div class="link-content">
+                  <div class="text-block-28">Wizard</div>
+                  <div class="div-block-56">
+                    <div class="subclass-name">School of Romanticism</div>
+                    <p class="tag-line">Surrender yourself to the Sublime and find true enlightenment</p>
+                  </div>
+                </div>
+              </a>
+              <div data-w-id="8ae7f1f1-9d50-e50f-b561-4072173dbf22" class="back-button">
+                <div class="text-block-23 alt">Back</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-embed">
+          <style>
+.subclass-menu-link:hover .tag-line {
+	opacity: 1;
+} 
+.subclass-menu-link .subclass-image-container {
+	transition:  1s opacity 0.4s ease-in-out;
+}
+@media screen and (min-width: 800px) {
+  .subclass-menu-link:hover .subclass-image-container {
+    opacity: 1;
+    display: block;
+  }
+    .subclass-menu-link:hover .link-content{
+    margin-left: -2rem;
+  }
+}
+.subclass-menu-link .link-content{
+	transition: all 0.4s ease-in-out;
+} 
+.subclass-menu-link[color="pink"]:hover .subclass-name,
+.w--current[color="pink"] .subclass-name{
+	color: var(--barbarian-pink);
+} 
+.subclass-menu-link[color="purple"]:hover .subclass-name,
+.w--current[color="purple"] .subclass-name{
+	color: var(--bard-purple);
+} 
+.subclass-menu-link[color="yellow"]:hover .subclass-name,
+.w--current[color="yellow"] .subclass-name{
+	color: var(--bounty-hunter-yellow);
+} 
+.subclass-menu-link[color="green"]:hover .subclass-name,
+.w--current[color="green"] .subclass-name{
+	color: var(--druid-green);
+} 
+.subclass-menu-link[color="orange"]:hover .subclass-name,
+.w--current[color="orange"] .subclass-name{
+	color: var(--paladin-orange);
+} 
+.subclass-menu-link[color="blue"]:hover .subclass-name,
+.w--current[color="blue"]:hover .subclass-name{
+	color: var(--wizard-blue);
+}
+.button-3.selected:before {
+	content: "• ";
+  margin-left: -1ch;
+}
+.menu-button.w--open .menu {
+	display: none;
+}
+.menu-button.w--open .close {
+	display: block;
+}
+  .menu-button.w--open .mob-menu.close {
+  	display: none;
+  }
+@media screen and (max-width: 800px) {
+  .menu-button.w--open .close {
+    display: none;
+  }
+  .menu-button.w--open .mob-menu.close {
+  	display: block;
+  }
+}
+.subclass-menu-link:nth-of-type(1) .subclass-image-1,
+.subclass-menu-link:nth-of-type(5) .subclass-image-1,
+.subclass-menu-link:nth-of-type(9) .subclass-image-1 {
+	top: 25vh;
+  left: 50vw;
+}
+.subclass-menu-link:nth-of-type(1) .subclass-image-2,
+.subclass-menu-link:nth-of-type(5) .subclass-image-2,
+.subclass-menu-link:nth-of-type(9) .subclass-image-2 {
+	bottom: 40vh;
+  left: 15vw;
+}
+.subclass-menu-link:nth-of-type(1) .subclass-image-3,
+.subclass-menu-link:nth-of-type(5) .subclass-image-3,
+.subclass-menu-link:nth-of-type(9) .subclass-image-3 {
+	top: 5vh;
+  right: 45vw;
+}
+.subclass-menu-link:nth-of-type(1) .subclass-image-4,
+.subclass-menu-link:nth-of-type(5) .subclass-image-4,
+.subclass-menu-link:nth-of-type(9) .subclass-image-4 {
+	bottom: 15vh;
+  right: 5vw;
+}
+.subclass-menu-link:nth-of-type(2) .subclass-image-1,
+.subclass-menu-link:nth-of-type(6) .subclass-image-1,
+.subclass-menu-link:nth-of-type(10) .subclass-image-1 {
+	top: 36vh;
+  left: 16vw;
+}
+.subclass-menu-link:nth-of-type(2) .subclass-image-2,
+.subclass-menu-link:nth-of-type(6) .subclass-image-2,
+.subclass-menu-link:nth-of-type(10) .subclass-image-2 {
+	top: 19vh;
+  right: 17vw;
+}
+.subclass-menu-link:nth-of-type(2) .subclass-image-3,
+.subclass-menu-link:nth-of-type(6) .subclass-image-3,
+.subclass-menu-link:nth-of-type(10) .subclass-image-3 {
+	bottom: 28vh;
+  left: 22vw;
+}
+.subclass-menu-link:nth-of-type(2) .subclass-image-4,
+.subclass-menu-link:nth-of-type(6) .subclass-image-4,
+.subclass-menu-link:nth-of-type(10) .subclass-image-4 {
+	bottom: 39vh;
+  right: 19vw;
+}
+.subclass-menu-link:nth-of-type(3) .subclass-image-1,
+.subclass-menu-link:nth-of-type(7) .subclass-image-1,
+.subclass-menu-link:nth-of-type(11) .subclass-image-1 {
+	top: 2vh;
+  left: 68vw;
+}
+.subclass-menu-link:nth-of-type(3) .subclass-image-2,
+.subclass-menu-link:nth-of-type(7) .subclass-image-2,
+.subclass-menu-link:nth-of-type(11) .subclass-image-2 {
+	top: 26vh;
+  right: 28vw;
+}
+.subclass-menu-link:nth-of-type(3) .subclass-image-3,
+.subclass-menu-link:nth-of-type(7) .subclass-image-3,
+.subclass-menu-link:nth-of-type(11) .subclass-image-3 {
+	bottom: 25vh;
+  left: 14vw;
+}
+.subclass-menu-link:nth-of-type(3) .subclass-image-4,
+.subclass-menu-link:nth-of-type(7) .subclass-image-4,
+.subclass-menu-link:nth-of-type(11) .subclass-image-4 {
+	bottom: 24vh;
+  right: 21vw;
+}
+.subclass-menu-link:nth-of-type(4) .subclass-image-1,
+.subclass-menu-link:nth-of-type(8) .subclass-image-1,
+.subclass-menu-link:nth-of-type(12) .subclass-image-1 {
+	top: 21vh;
+  left: 24vw;
+}
+.subclass-menu-link:nth-of-type(4) .subclass-image-2,
+.subclass-menu-link:nth-of-type(8) .subclass-image-2,
+.subclass-menu-link:nth-of-type(12) .subclass-image-2 {
+	top: 7vh;
+  right: 82vw;
+}
+.subclass-menu-link:nth-of-type(4) .subclass-image-3,
+.subclass-menu-link:nth-of-type(8) .subclass-image-3,
+.subclass-menu-link:nth-of-type(12) .subclass-image-3 {
+	bottom: 15vh;
+  left: 76vw;
+}
+.subclass-menu-link:nth-of-type(4) .subclass-image-4,
+.subclass-menu-link:nth-of-type(8) .subclass-image-4,
+.subclass-menu-link:nth-of-type(12) .subclass-image-4 {
+	bottom: 40vh;
+  right: 9vw;
+}
+[coming-soon="true"] {
+	opacity: 0.4;
+	pointer-events: none;
+  }
+[coming-soon="true"] .subclass-name:after,
+.strike:after{
+	content: "Coming Soon";
+	margin-left: 2ch;
+	font-size: 0.5em;
+}
+[coming-soon="true"] .tag-line {
+	display: none;
+}
+</style>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="subclass-wrapper">
+    <section data-w-id="26b738a6-4c81-1ba6-89f4-6f5bc5c0ac82" style="opacity:0" class="quote-section">
+      <div class="quote-time">
+        <div class="background-image"></div>
+        <div class="bg-op"></div>
+        <p class="quote"><span id="first">“...Rain patters on the grass as I stalk towards my quarry.</span> <span id="second">The fear in their eyes pleads for a fate different to what stands before them.</span> <span id="third">They pull their gun Out, to save their neck from the hangman.</span> <span id="fourth">They get their wish.</span> <span id="fifth">I spare them from the gallows by drawing faster.</span> <br>‍<span id="sixth">I always strike first...”</span></p>
+      </div>
+    </section>
+    <section data-w-id="205bf37d-bf03-5153-238c-b4a735ac59d6" style="opacity:0" class="hero-section">
+      <div>
+        <p class="class">The Ranger Archetype</p>
+        <h1 class="title">Bounty<br>Hunter</h1>
+        <p class="pitch">Stop at nothing to track down and bring your marks in dead or alive.</p>
+      </div>
+    </section>
+    <section class="nav-section">
+      <div class="div-block-24">
+        <div class="text-block">Overview</div>
+        <ul role="list" class="list w-list-unstyled">
+          <li>
+            <a href="#key-features" class="link overview-link">Key Feature</a>
+          </li>
+          <li>
+            <a href="#levels" class="link">Class Features</a>
+          </li>
+          <li>
+            <a href="#roleplay" class="link">Roleplay</a>
+          </li>
+          <li>
+            <a href="#story" class="link">Story</a>
+          </li>
+          <li>
+            <a href="#download" class="link">Download</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="key-features" data-w-id="ee416ab2-24a5-8a4d-6aea-68d69a1d39b7" style="opacity:0" class="key-feature-section">
+      <div class="div-block-30 ranger">
+        <h2 class="heading-15">Key Feature</h2>
+        <div data-w-id="3e9ce31c-4096-cb05-dfd9-e5c5202824e3" style="opacity:0" class="text-block-4">STrike</div>
+        <div data-w-id="a63766b2-4517-615e-5972-1113914c5f2e" style="opacity:0" class="text-block-3">First</div>
+        <div class="div-block-29">
+          <p class="paragraph-14">Get the drop on everyone and deal extra damage to all enemies on the first round of combat</p>
+        </div>
+      </div>
+      <div class="div-block-28 ranger">
+        <div class="div-block-27"><img src="../../../images/nice-shot.webp" loading="lazy" sizes="(max-width: 479px) 100vw, 63vw" srcset="../../../images/nice-shot-p-500.png 500w, ../../../images/nice-shot.webp 704w" alt="" class="image-9"></div>
+      </div>
+    </section>
+    <section id="levels" class="level-section">
+      <div class="section-container">
+        <div id="w-node-_0c5a6566-6f46-a737-92eb-a573a4b1e709-b5b37dea" class="bg-images">
+          <div class="section-header levels">
+            <div class="text-block-2">Class Features</div>
+            <div class="div-block-26"></div>
+          </div>
+          <div class="feature-bg is-active"></div>
+          <div class="feature-bg feature-bg-2"></div>
+          <div class="feature-bg feature-bg-3"></div>
+          <div class="feature-bg feature-bg-4"></div>
+          <div class="feature-bg feature-bg-5"></div>
+          <div class="feature-bg feature-bg-6"></div>
+        </div>
+        <div id="w-node-_4aa28154-75c8-56ae-f032-a1ddccd51e71-b5b37dea" class="sticky-wrapper">
+          <ul role="list" class="list-2 w-list-unstyled">
+            <li id="level-1" class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">1</div>
+              </div>
+            </li>
+            <li id="level-2" class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">2</div>
+              </div>
+            </li>
+            <li id="level-3" class="feature">
+              <div class="div-block-36 feature">
+                <div id="w-node-_81683135-24cd-6ba8-1515-6256ea69d5a1-b5b37dea" class="text-block-7">3</div>
+              </div>
+              <ul role="list" class="sub-list w-list-unstyled">
+                <li id="sub-feature-1" class="sub-item-list is-active">
+                  <div class="sub-item"></div>
+                  <a href="#feature-1" class="w-inline-block">
+                    <div class="text-block-8">Favoured Profession</div>
+                  </a>
+                </li>
+                <li id="sub-feature-2" class="sub-item-list">
+                  <div class="sub-item key"></div>
+                  <a href="#feature-2" class="w-inline-block">
+                    <div class="text-block-8 key">Strike First</div>
+                  </a>
+                </li>
+                <li id="sub-feature-3" class="sub-item-list">
+                  <div class="sub-item"></div>
+                  <a href="#feature-3" class="w-inline-block">
+                    <div class="text-block-8">Particular Set of Skills</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">4</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">5</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">6</div>
+              </div>
+            </li>
+            <li id="level-7" class="feature">
+              <div class="div-block-36 feature">
+                <div class="text-block-7">7</div>
+              </div>
+              <ul role="list" class="sub-list w-list-unstyled">
+                <li id="sub-feature-4" class="sub-item-list">
+                  <div class="sub-item"></div>
+                  <a href="#feature-4" class="w-inline-block">
+                    <div class="text-block-8">Glory of the hunt</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">8</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">9</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">10</div>
+              </div>
+            </li>
+            <li id="level-11" class="feature">
+              <div class="div-block-36 feature">
+                <div class="text-block-7">11</div>
+              </div>
+              <ul role="list" class="sub-list w-list-unstyled">
+                <li id="sub-feature-5" class="sub-item-list">
+                  <div class="sub-item"></div>
+                  <a href="#feature-5" class="w-inline-block">
+                    <div class="text-block-8">I Like Those Odds</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">12</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">13</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">14</div>
+              </div>
+            </li>
+            <li id="level-15" class="feature">
+              <div class="div-block-36 feature">
+                <div class="text-block-7">15</div>
+              </div>
+              <ul role="list" class="sub-list w-list-unstyled">
+                <li id="sub-feature-6" class="sub-item-list">
+                  <div class="sub-item"></div>
+                  <a href="#feature-6" class="w-inline-block">
+                    <div class="text-block-8">Proceeding Reputation</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">16</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">17</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">18</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">19</div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="div-block-36">
+                <div class="text-block-7">20</div>
+              </div>
+            </li>
+          </ul>
+          <div id="w-node-_0e76d147-4e0e-5d63-2bda-892ebb50681b-b5b37dea" class="feature-zone">
+            <div id="feature-1" class="feature-area">
+              <div id="w-node-_78e9181f-ae3e-6030-b222-884c98d5f390-b5b37dea" class="feature-header">
+                <h2 class="heading-13">3rd level feature</h2>
+                <h3 class="heading-14">Favoured Profession</h3>
+                <div class="text-block-9">“It’s amazing how similar people are when they are trying to be unique.”</div>
+              </div>
+              <div id="w-node-_8a7b5da1-d59a-7ddc-fd23-771577354151-b5b37dea" class="feature-video">
+                <div class="vid-wrap">
+                  <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fp6xqKJqsQWs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dp6xqKJqsQWs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fp6xqKJqsQWs%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" width="940" height="528" scrolling="no" allowfullscreen="" title="매일 컴퓨터에 집중할 수 있도록 도와주는 음악 | 3 hour lofi hiphop mix / lofi coding/ study / work"></iframe></div><img src="../../../images/Rectangle-3467905.webp" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 767px) 77vw, (max-width: 991px) 63vw, (max-width: 1279px) 32vw, (max-width: 1439px) 33vw, (max-width: 1919px) 472px, 464px" srcset="../../../images/Rectangle-3467905-p-500.png 500w, ../../../images/Rectangle-3467905.webp 587w" alt="" class="image-22">
+                </div>
+              </div>
+              <div id="w-node-_82b9839a-1495-8023-7c08-80eb71312e32-b5b37dea" class="feature-content">
+                <p class="paragraph-16">Hunting beasts is one thing, hunting people is another. Swap out favoured enemy for a favoured profession that you are skilled in tracking. These could be: nobles, warriors, mages, thieves, commoners, merchants, etc.<br><br>You have advantage on (INT) Investigation Checks to learn more about your target, as well advantage on Wisdom Ability Checks to deduce their daily routines. You also have proficiency with a tool that the profession uses if they use one.<br>‍<br>Choose one additional favoured profession at 6th and 14th level instead of a favoured enemy. As you gain levels your choices should reflect the types of professions you have hunted.</p>
+              </div>
+            </div>
+            <div id="feature-2" class="feature-area">
+              <div id="w-node-_75be655b-3530-c6b7-d35f-aa7af700430c-b5b37dea" class="feature-header">
+                <h2 class="heading-13 key">3rd level key feature</h2>
+                <h3 class="heading-14">STrike First</h3>
+                <div class="text-block-9">“Survival often comes down to who is quickest on the draw.”</div>
+              </div>
+              <div id="w-node-_8e48930f-67b7-f4c6-7a41-949a280ffa44-b5b37dea" class="feature-video"><img src="../../../images/Rectangle-3467906.webp" loading="lazy" sizes="100vw" srcset="../../../images/Rectangle-3467906-p-500.png 500w, ../../../images/Rectangle-3467906.webp 587w" alt="" class="image-22 nonvisible">
+                <div style="padding-top:56.17021276595745%" class="video-2 visible w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FNGn963mYbCY%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNGn963mYbCY&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" width="940" height="528" scrolling="no" allowfullscreen="" title="Strike FIrst"></iframe></div>
+              </div>
+              <div id="w-node-b807159a-c4e6-996e-1221-b6d84dbd90f0-b5b37dea" class="feature-content">
+                <p class="paragraph-16">You have developed a keen eye for combat and a trigger happy demeanour.  When you take the attack action on your first round of combat you can attack up to your proficiency bonus’ worth of additional targets. Targeting different creatures, roll to attack normally dealing Strike First Damage as your weapon type. The targets must be within range of you at the start of your turn and your weapon must be able to attack as many times as required.<br><br>Additionally can choose to disarm your targets, instead of dealing additional damage. On a successful hit you instead force them to make a Strength saving throw vs your spell save DC. On a failure the target/s drop their weapons unless unable to. On a success they do not lose grip of their weapon.</p>
+                <div class="table col-2">
+                  <div class="table-heading">
+                    <div class="text-block-10">Level</div>
+                    <div class="text-block-10">Damage</div>
+                  </div>
+                  <div class="table-row">
+                    <div id="w-node-_3e876654-9a2a-d72d-4dfb-fc881c511d67-b5b37dea">3</div>
+                    <div id="w-node-c050d56f-a0a0-e87e-ba1e-bf7c8e417f22-b5b37dea">1d4</div>
+                  </div>
+                  <div class="table-row">
+                    <div id="w-node-_02b6a517-3ddb-5a61-e790-8f5a96681de3-b5b37dea">5</div>
+                    <div id="w-node-_02b6a517-3ddb-5a61-e790-8f5a96681de5-b5b37dea">1d6</div>
+                  </div>
+                  <div class="table-row">
+                    <div id="w-node-_717d1193-7cb3-4980-0fa0-568fa92cccc8-b5b37dea">9</div>
+                    <div id="w-node-_717d1193-7cb3-4980-0fa0-568fa92cccca-b5b37dea">1d8</div>
+                  </div>
+                  <div class="table-row">
+                    <div id="w-node-_84b01973-c083-df82-6175-c15c499fce11-b5b37dea">13</div>
+                    <div id="w-node-_84b01973-c083-df82-6175-c15c499fce13-b5b37dea">1d10</div>
+                  </div>
+                  <div class="table-row">
+                    <div id="w-node-e417d8a2-8775-0bd3-b272-ca8d66fbac7b-b5b37dea">17</div>
+                    <div id="w-node-e417d8a2-8775-0bd3-b272-ca8d66fbac7d-b5b37dea">1d12</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="feature-3" class="feature-area">
+              <div class="feature-header">
+                <h2 class="heading-13">3rd level feature</h2>
+                <h3 class="heading-14">Particular Set of Skills</h3>
+                <div class="text-block-9">“<em>You got to adapt to the situation, lest you find yourself in a sticky spot.</em>”</div>
+              </div>
+              <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce0a5-b5b37dea" class="feature-video">
+                <div style="padding-top:56.17021276595745%" class="video-2 visible w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FW8LvIiOVWDI%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DW8LvIiOVWDI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FW8LvIiOVWDI%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" width="940" height="528" scrolling="no" allowfullscreen="" title="Particular Set of Skills"></iframe></div><img src="../../../images/Rectangle-3467907.webp" loading="lazy" sizes="100vw" srcset="../../../images/Rectangle-3467907-p-500.png 500w, ../../../images/Rectangle-3467907.webp 587w" alt="" class="image-22 nonvisible">
+              </div>
+              <div class="content">
+                <p class="paragraph-16">Choose between a set of skills that many Bounty Hunters specialise in. Select one from the table below, you can change your set of skills to another at 7th, 11th or 15th levels.</p>
+                <div class="table col-2 big">
+                  <div class="table-heading alt">
+                    <div class="text-block-10">Skill Archetype</div>
+                    <div class="text-block-10">Description</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce08b-b5b37dea">Vanguard</div>
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce08d-b5b37dea">You can can wear heavy armour at no penalty and gain +1 AC when wearing it.</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce090-b5b37dea">Marksman</div>
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce092-b5b37dea">When you attack a creature at over 120ft you deal an additional dice of damage equal to your Strike First dice. Once per round.</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce095-b5b37dea">Bruiser</div>
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce097-b5b37dea">When you attack a creature within reach you deal an additional dice of damage equal to your Strike First dice. Once per round.</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce09a-b5b37dea">Duellist</div>
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce09c-b5b37dea">When against a single enemy in combat you can deal 1 additional Strike First action against them.</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce09f-b5b37dea">Quick Draw</div>
+                    <div id="w-node-_617dc952-3391-c318-0d0c-7b35166ce0a1-b5b37dea">If you are first in initiative order then you can make one additional Strike First attack against a target</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-aeae79c7-73b6-efd8-ee9b-1ac11b212f56-b5b37dea">Executioner</div>
+                    <div id="w-node-aeae79c7-73b6-efd8-ee9b-1ac11b212f58-b5b37dea">When an enemy is below 15% of their maximum HP you deal an additional Strike First die.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="feature-4" class="feature-area">
+              <div class="feature-header">
+                <h2 class="heading-13">7th level feature</h2>
+                <h3 class="heading-14">Glory of the hunt</h3>
+                <div class="text-block-9">“<em>Oh I do love it when they run</em>.”</div>
+              </div>
+              <div id="w-node-_478fccd4-f01c-8ac6-5aa3-f3638c7b287f-b5b37dea" class="feature-video">
+                <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FC2fpXACbJ18%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DC2fpXACbJ18&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FC2fpXACbJ18%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" width="940" height="528" scrolling="no" allowfullscreen="" title="Samurai Jack | Jack Vs. the Bounty Hunters | Adult Swim UK 🇬🇧"></iframe></div><img src="../../../images/Rectangle-3467908.webp" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 767px) 77vw, (max-width: 991px) 63vw, (max-width: 1279px) 32vw, (max-width: 1439px) 33vw, (max-width: 1919px) 472px, 464px" srcset="../../../images/Rectangle-3467908-p-500.png 500w, ../../../images/Rectangle-3467908.webp 587w" alt="" class="image-22">
+              </div>
+              <div class="content">
+                <p class="paragraph-16">Nothing can escape for long. You can mark a target of your favoured profession within 120ft line of sight as your quarry. As long as they are on the same plane of existence, you gain the following benefits.   You gain advantage on Perception, Insight and Intimidation ability checks when tracking or learning more information about your target. <br><br>This mark ends when you discover the target is dead or you have turned them into whoever posted a bounty on them. You can then use this ability at the next dawn. Ending the hunt early cause you to have to wait 7 days before using the ability again.<br><br>Casting Hunter’s Mark on your quarry deals 2d10 damage. When you are within 10ft of the quarry you can deal instead 1d10 damage to a non-marked target once per round.</p>
+              </div>
+            </div>
+            <div id="feature-5" class="feature-area">
+              <div class="feature-header">
+                <h2 class="heading-13">11th level feature</h2>
+                <h3 class="heading-14">I Like Those Odds</h3>
+                <div class="text-block-9">“<em>Finally, a worthy challenge!</em>”</div>
+              </div>
+              <div id="w-node-_87950d7c-275e-4d2b-ec3c-9f3c1ce38b27-b5b37dea" class="feature-video">
+                <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FC2fpXACbJ18%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DC2fpXACbJ18&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FC2fpXACbJ18%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" width="940" height="528" scrolling="no" allowfullscreen="" title="Samurai Jack | Jack Vs. the Bounty Hunters | Adult Swim UK 🇬🇧"></iframe></div><img src="../../../images/Rectangle-3467909.webp" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 767px) 77vw, (max-width: 991px) 63vw, (max-width: 1279px) 32vw, (max-width: 1439px) 33vw, (max-width: 1919px) 472px, 464px" srcset="../../../images/Rectangle-3467909-p-500.png 500w, ../../../images/Rectangle-3467909.webp 587w" alt="" class="image-22">
+              </div>
+              <div class="content">
+                <p class="paragraph-16">Experience has left you better equipped to take on greater odds. When you enter initiative,  add up the total number of party members present in the fight and the number of enemies you are facing. <br><br>If the total number of enemies out-numbers your party by 2 at the start of the round then you and any allies are considered ‘Outnumbered.’ Refer to the table below to see what bonuses you receive.</p>
+                <div class="table col-2 big">
+                  <div class="table-heading alt">
+                    <div class="text-block-10">Odds State</div>
+                    <div class="text-block-10">Odds Condition</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-bdd85c82-a235-cfd4-de65-a5ab5642fd60-b5b37dea">+2</div>
+                    <div id="w-node-bdd85c82-a235-cfd4-de65-a5ab5642fd62-b5b37dea">Add 1 bonus Strike First dice to an attack. Once per round</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-bdd85c82-a235-cfd4-de65-a5ab5642fd65-b5b37dea">+4</div>
+                    <div id="w-node-bdd85c82-a235-cfd4-de65-a5ab5642fd67-b5b37dea">Double your Strike First dice on your first round of combat.</div>
+                  </div>
+                  <div class="table-row alt">
+                    <div id="w-node-_39f07fd2-5923-b7e8-303a-6e8a48af3228-b5b37dea">x5</div>
+                    <div id="w-node-_39f07fd2-5923-b7e8-303a-6e8a48af322a-b5b37dea">Party members can can add a dice equal to your Strike First dice on one attack rolls each round. You can add this damage to each attack you make.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="feature-6" class="feature-area">
+              <div class="feature-header">
+                <h2 class="heading-13">15th level feature</h2>
+                <h3 class="heading-14">Proceeding Reputation</h3>
+                <div class="text-block-9">“<em class="italic-text">I’m sure you’ve heard of me, so lets make this easy and you hand yourself in.</em>”</div>
+              </div>
+              <div id="w-node-e892b170-ea16-0d03-dad0-d97567a33886-b5b37dea" class="feature-video">
+                <div style="padding-top:56.17021276595745%" class="video-2 w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FC2fpXACbJ18%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DC2fpXACbJ18&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FC2fpXACbJ18%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" width="940" height="528" scrolling="no" allowfullscreen="" title="Samurai Jack | Jack Vs. the Bounty Hunters | Adult Swim UK 🇬🇧"></iframe></div><img src="../../../images/Rectangle-3467910.webp" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 767px) 77vw, (max-width: 991px) 63vw, (max-width: 1279px) 32vw, (max-width: 1439px) 33vw, (max-width: 1919px) 472px, 464px" srcset="../../../images/Rectangle-3467910-p-500.png 500w, ../../../images/Rectangle-3467910.webp 587w" alt="" class="image-22">
+              </div>
+              <div class="content">
+                <p class="paragraph-16">You have obtained a reputation that few haven’t heard of. Creatures that can see or hear makes a Contested Wisdom Saving Throw against your Intimidation Ability Check. <br><br>If they fail, they become frightened of you and you are now able to land a Critical hit on a 19 or 20 and your Strike First does maximum damage to them.<br><br>You can intimidate an amount of people this way equal to your proficiency bonus. This ability lasts for 10 minutes. This can be used once per day, resetting on a long rest.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="roleplay" class="roleplay-section">
+      <div class="div-block-37">
+        <div class="section-header">
+          <div id="w-node-_56f19492-fe62-2ac0-3a59-3618b33edd34-b5b37dea" class="text-block-2">Roleplay</div>
+          <div class="div-block-26"></div>
+        </div>
+        <h2 class="heading-16">Dead<br>Or<br>Alive</h2>
+        <div class="text-block-11">INSPIRATION FOR PLAYING AS THE BOUNTY HUNTER IN YOUR GAME</div>
+      </div>
+      <div class="div-block-38">
+        <div id="w-node-_70cdf086-1db1-e3e0-d02f-06c8992f037a-b5b37dea">
+          <div class="div-block-39">
+            <div class="text-block-12">Dead or Alive</div>
+            <div class="text-block-13">Getting Into Character</div>
+          </div>
+        </div>
+        <div class="div-block-40">
+          <p class="paragraph-17">    A Bounty Hunter, though deemed more civilized than traditional rangers, still operates outside the norms of society. Their independence is evident as they are summoned by either the state or the rebellion to pursue specific individuals and collect bounties, whether dead or alive.     <br><br>    Driven by a sense of satisfaction in the pursuit, these Rangers exhibit quick thinking and even quicker reflexes. They assess the odds, relying on grit and determination to forge a path towards their target. <br>‍<br>    While most bounty hunters exude intimidation, the most notorious among them boast reputations capable of instilling fear in those unfortunate enough to cross their paths.</p>
+        </div>
+      </div>
+      <div class="div-block-31">
+        <p class="paragraph-15">The <span class="text-span-3">Bounty Hunter</span> is for people who love the thrill of the hunt. investigating and learning more about their marks as they look for clues and speak with the locals. Once they find them however all guns go blazing as they become an unstoppable force of terror.</p>
+      </div>
+      <div class="div-block-33">
+        <div class="text-block-5">Think of characters like</div>
+        <div class="div-block-34">
+          <div data-w-id="7f201ff7-18f2-3fe5-046b-7b142128baf3" class="about-history-image radius-regular">
+            <div style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="rotate-card">
+              <div class="rotate-card-item first">
+                <div class="rotate-card-image radius-regular first">
+                  <div class="rotate-card-height"></div><img src="../../../images/Rectangle-3467701.webp" loading="lazy" alt="" class="image-fill">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-block-6">Din Djarin / The Mandolorian</div>
+        </div>
+        <div class="div-block-34">
+          <div data-w-id="ed746f5f-0a4c-ffec-670f-047b934a36c7" class="about-history-image radius-regular">
+            <div style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="rotate-card">
+              <div class="rotate-card-item first">
+                <div class="rotate-card-image radius-regular first">
+                  <div class="rotate-card-height"></div><img src="../../../images/Rectangle-3467703.webp" loading="lazy" alt="" class="image-fill">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-block-6">Yalena &quot;Dutch&quot; Yardeen</div>
+        </div>
+        <div class="div-block-34">
+          <div data-w-id="974b198a-b7c3-f7e7-d7ac-d0f4d267ce38" class="about-history-image radius-regular">
+            <div style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="rotate-card">
+              <div class="rotate-card-item first">
+                <div class="rotate-card-image radius-regular first">
+                  <div class="rotate-card-height"></div><img src="../../../images/Rectangle-3467702.webp" loading="lazy" alt="" class="image-fill">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-block-6">Rick Deckard</div>
+        </div>
+        <div class="div-block-34">
+          <div data-w-id="9a2badd8-90e3-a836-4301-894b7c68eed4" class="about-history-image radius-regular">
+            <div style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="rotate-card">
+              <div class="rotate-card-item first">
+                <div class="rotate-card-image radius-regular first">
+                  <div class="rotate-card-height"></div><img src="../../../images/Rectangle-3467731.webp" loading="lazy" alt="" class="image-fill">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-block-6">Faye Valentine</div>
+        </div>
+      </div>
+      <div class="div-block-41">
+        <div class="text-block-14">Role in the group</div>
+        <h2 class="heading-17">First Through the Door</h2>
+        <p class="paragraph-18">While Bounty Hunters work well alone, some jobs are too big to fly solo. Often a Bounty Hunter will find themselves within a group either finding them out to assist with a bounty or have been brought in by a common patron. <br><br>Alternatively a Bounty Hunter may be with a group of adventurers during their time between bounties, seeing the time more as a hobby that keeps their wits and blades always sharp.</p>
+        <div class="div-block-42">
+          <div class="div-block-43"><img src="../../../images/Rectangle-3467713.webp" loading="lazy" sizes="(max-width: 479px) 72vw, (max-width: 767px) 42vw, (max-width: 991px) 44vw, (max-width: 1279px) 45vw, (max-width: 1919px) 46vw, 720px" srcset="../../../images/Rectangle-3467713-p-500.png 500w, ../../../images/Rectangle-3467713-p-800.png 800w, ../../../images/Rectangle-3467713-p-1080.png 1080w, ../../../images/Rectangle-3467713.webp 1440w" alt="" class="image-13"></div>
+          <div>
+            <div class="text-block-15">“To hunt a beast is to know <br><em>dominance</em>. To hunt a man is to <br>know<em> fear</em>.”</div>
+          </div>
+        </div>
+        <div class="text-block-16">Isolde<br>The Deadeye</div>
+      </div>
+      <div class="div-block-45">
+        <div id="w-node-_33d02652-b810-862a-0820-c8a3b31b8e55-b5b37dea"><img src="../../../images/Rectangle-3467722.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 28vw, (max-width: 1439px) 29vw, 416px" srcset="../../../images/Rectangle-3467722-p-500.png 500w, ../../../images/Rectangle-3467722-p-800.png 800w, ../../../images/Rectangle-3467722-p-1080.png 1080w, ../../../images/Rectangle-3467722.webp 1440w" alt="" class="image-15"></div>
+        <div id="w-node-_9d1e8282-5d11-2e79-ac87-a246c13eb0b4-b5b37dea" class="div-block-44">
+          <h3 class="heading-18">Personality</h3>
+          <p class="paragraph-19">     A Bounty Hunter is considered more civilised than the more traditional rangers but that doesn’t mean they are civil. They work independently from the status quo, being called by the state or the rebellion to track down particular people of interest and claim the bounty, dead or alive.</p>
+        </div>
+        <div id="w-node-fc461943-4ce0-f623-79b2-2d0456d871f0-b5b37dea" class="div-block-44">
+          <h3 class="heading-18">Relationships</h3>
+          <p class="paragraph-19">     Constantly on the move, Bounty Hunters tend to have very little contact with those outside the profession for their families sake. Most tend to have someone working to find them new contracts. Other Bounty Hunters can either be a threat or an ally and it does well to work out who is which fast.</p>
+        </div>
+        <div id="w-node-_2cf00c0d-7506-8980-91e1-f2997614ad9f-b5b37dea" class="div-block-44">
+          <h3 class="heading-18">Morals</h3>
+          <p class="paragraph-19">     To some its just a job, to others its a life style. Either way the contract is a contract and finding your mark is all that matters. A sense of lawfulness surrounds the Bounty Hunter, either to the law of the land, the contract being completed or to the profession itself.</p>
+        </div>
+        <div id="w-node-d0cf39d6-c275-6621-8a45-4817d7173cb1-b5b37dea" class="div-block-44">
+          <h3 class="heading-18">Downtime</h3>
+          <p class="paragraph-19">     During downtime, some Bounty Hunters might take on a few smaller jobs to help pay for new gear and lifestyle. Others might only take on bigger jobs so spend their downtime relaxing and getting to have some peace and quiet. Either way the need to hunt is always there and never really goes away.</p>
+        </div>
+        <div id="w-node-_9f24586e-afdd-3fb3-8ae3-dbe2032fec11-b5b37dea" class="div-block-46"><img src="../../../images/Rectangle-3467714.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 28vw, (max-width: 1439px) 29vw, 416px" srcset="../../../images/Rectangle-3467714-p-500.png 500w, ../../../images/Rectangle-3467714-p-800.png 800w, ../../../images/Rectangle-3467714-p-1080.png 1080w, ../../../images/Rectangle-3467714.webp 1313w" alt="" class="image-14"></div>
+        <div id="w-node-d71c8df4-ae00-61bf-a9bf-e400f82fc8ef-b5b37dea"><img src="../../../images/Rectangle-3467720.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 28vw, (max-width: 1439px) 29vw, 416px" srcset="../../../images/Rectangle-3467720-p-500.png 500w, ../../../images/Rectangle-3467720-p-800.png 800w, ../../../images/Rectangle-3467720-p-1080.png 1080w, ../../../images/Rectangle-3467720.webp 1313w" alt="" class="image-16"></div>
+        <div id="w-node-_95c6a3e5-e8ba-05d7-332e-b5d5a103167d-b5b37dea"><img src="../../../images/bounty-hunter-dummy.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 32vw, (max-width: 1439px) 29vw, 416px" srcset="../../../images/bounty-hunter-dummy-p-500.png 500w, ../../../images/bounty-hunter-dummy-p-800.png 800w, ../../../images/bounty-hunter-dummy-p-1080.png 1080w, ../../../images/bounty-hunter-dummy.webp 1440w" alt="" class="image-17"></div>
+      </div>
+    </section>
+    <section id="story" class="story-section">
+      <div class="text-block-17">Short Story</div>
+      <h2 class="heading-19">The Hunt</h2>
+      <div class="text-block-18">A short teaser for a narrative</div>
+      <a href="#story" class="link-2">Read the Story</a>
+    </section>
+    <section id="download" class="download-section">
+      <div id="w-node-d376e576-75bd-1fee-32bc-d75985a874e8-b5b37dea" class="publish-pdf">
+        <a href="../../../documents/Bounty-Hunter-Ranger-Subclass-Press-Print-Version.pdf" target="_blank" class="link-3 active">Download The PDF</a>
+        <p class="paragraph-22">A handy reference guide for playing as The Bounty Hunter in your game.</p>
+      </div>
+      <div class="print-pdf">
+        <a href="../../../documents/Bounty-Hunter-Ranger-Subclass-Print-Ready-Version.pdf" target="_blank" class="link-3 secondary">Print PDF <br>VERSION</a>
+      </div>
+      <div class="vtt-module">
+        <a href="#" class="link-3 inactive">VTT MODULE</a>
+        <p class="paragraph-22">Coming Soon</p>
+      </div>
+    </section>
+    <section class="class-footer">
+      <div class="div-block-15">
+        <div class="div-block-16">
+          <a href="http://storytale.studio" target="_blank" class="link-block-3 w-inline-block"><img src="../../../images/storytale-logos_book-1.svg" loading="lazy" alt="" class="image-6"></a>
+          <p class="paragraph-12">A Storytale Studio Venture</p>
+        </div>
+        <div>
+          <p class="paragraph-13">Copyright 2024</p>
+        </div>
+        <div id="w-node-c1194dc4-bf28-6155-6595-fee2dbe39fe3-b5b37dea" class="div-block-17">
+          <button class="paragraph-13 btn-para" id="btn-ai">Images generated via AI</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="mask" class="hidden"></div>
+<section id="modal" class="hidden">
+  <p>While we have generated the images on the site using GenAI, we would prefer human created art. It could be your art that replaces it. If you are interested, reach out to us on the <a href="https://discord.gg/2nHxQD8UuE" target="_blank">discord</a>.</p>
+</section>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=645c8255da9f4f0a53c334fa" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../../../js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js">
+</script>
+  <script>
+    window.onload = function() {
+        var anchors = document.getElementsByTagName('*');
+        for(var i = 0; i < anchors.length; i++) {
+            var anchor = anchors[i];
+            anchor.onclick = function() {
+                code = this.getAttribute('whenClicked');
+                eval(code);   
+            }
+        }
+    }
+</script>
+<script src="../../../js/script.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+  <script>
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+    infinite: false,
+    direction: 'vertical',
+  })
+  lenis.on('scroll', ScrollTrigger.update)
+  gsap.ticker.add((time)=>{
+    lenis.raf(time * 1000)
+  })
+  gsap.ticker.lagSmoothing(0)
+</script>
+  <script>
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.defaults({
+    markers: false
+  });
+</script>
+  <script>
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.quote-section',
+      // trigger element - viewport
+      start: "top top",
+      end: "80% bottom",
+      //pin: true,
+      scrub: 1
+    }
+  });
+  tl.fromTo('.bg-op', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  tl.fromTo('#first', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  tl.fromTo('#second', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  tl.fromTo('#third', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  tl.fromTo('#fourth', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  tl.fromTo('#fifth', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  tl.fromTo('#sixth', {
+    opacity: 0,
+    y: -10,
+  },
+            {
+    opacity: 1,
+    y: 0
+  });
+  let tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.hero-section',
+      // trigger element - viewport
+      start: "top top",
+      end: "80% bottom",
+      duration: 2,
+      //pin: true,
+      //scrub: 1
+    }
+  });
+  tl2.fromTo('.title', {
+    opacity: 0,
+  },
+             {
+    opacity: 1,
+  });
+  tl2.fromTo('.class', {
+    opacity: 0,
+  },
+             {
+    opacity: 1,
+  });
+  tl2.fromTo('.pitch', {
+    opacity: 0,
+  },
+             {
+    opacity: 1
+  });
+  let tl8 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.nav-section',
+      // trigger element - viewport
+      start: "top top",
+      end: "80% bottom",
+      //pin: true,
+      scrub: 1
+    }
+  });
+  tl8.to('.w-nav-brand',{ 
+    opacity: 0,
+    pointerEvents: 'none'});
+  tl8.to('.class-nav',{
+    opacity: 1,
+    pointerEvents: 'auto'});
+</script>
+  <script>
+  $(".level-section").each(function (index) {
+    let childTriggers = $(this).find(".feature-area");
+    let childTargets = $(this).find(".feature-bg");
+    let listTargets = $(this).find(".sub-item-list");
+    // switch active class
+    function makeItemActive(index) {
+      childTriggers.removeClass("is-active");
+      childTargets.removeClass("is-active");
+      listTargets.removeClass("is-active");
+      listTargets.parent().parent('.feature').removeClass("is-active");
+      listTargets.parent('.feature').removeClass("is-active");
+      childTriggers.eq(index).addClass("is-active");
+      childTargets.eq(index).addClass("is-active");
+      listTargets.eq(index).addClass("is-active");
+      listTargets.eq(index).parent().parent('.feature').addClass("is-active");
+    }
+    makeItemActive(0);
+    // create triggers
+    childTriggers.each(function (index) {
+      ScrollTrigger.create({
+        trigger: $(this),
+        start: "top center",
+        end: "bottom center",
+        onToggle: (isActive) => {
+          if (isActive) {
+            console.log(index)
+            makeItemActive(index);
+          }
+        }
+      });
+    });
+  });
+</script>
+  <script>
+const button = document.querySelector("#menu-button");
+let isOpened = false;
+function onClick() {
+	isOpened = !isOpened;
+	update();
+}
+function update() {
+	document.body.classList.toggle('nonactive');
+	if (isOpened) {
+  console.log(isOpened)
+		lenis.stop();
+	} else {
+  console.log(isOpened)
+		lenis.start();
+	}
+}
+button.addEventListener("click", onClick);
+update();
+</script>
+</body>
+</html>
