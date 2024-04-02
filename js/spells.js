@@ -9,9 +9,11 @@ fetch('../../../js/spells.json')
             const name = card.querySelector("[data-name]")
             const school = card.querySelector("[data-school]")
             const level = card.querySelector("[data-level]")
+            const teaser = card.querySelector("[data-teaser]")
             name.textContent = spell.spell_name;
             school.textContent = spell.school;
             level.textContent = spell.level;
+            teaser.textContent = spell.teaser;
             spellList.append(card)
             console.log(card)
         })
