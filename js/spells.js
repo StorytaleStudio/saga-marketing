@@ -14,6 +14,11 @@ let spells = [];
 
 searchInput.addEventListener("input", e=> {
     const value = e.target.value;
+    spells.forEach(spell => {
+        const isVisible = spell.name.includes(value)
+        spell.element.classList.toggle("hide", !isVisible)
+    })
+    
     console.log(spells)
 })
 
