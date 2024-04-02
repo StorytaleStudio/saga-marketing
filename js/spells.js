@@ -13,9 +13,9 @@ const searchInput = document.querySelector("[data-search]");
 let spells = [];
 
 searchInput.addEventListener("input", e=> {
-    const value = e.target.value;
+    const value = e.target.value.toLowerCase();
     spells.forEach(spell => {
-        const isVisible = spell.name.includes(value)
+        const isVisible = spell.name.toLowerCase().includes(value)
         spell.element.classList.toggle("hide", !isVisible)
     })
     
