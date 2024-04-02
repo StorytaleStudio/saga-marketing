@@ -29,6 +29,7 @@ const kebabCase = string => string
     .replace(/[\s_]+/g, '-')
     .toLowerCase();
 
+    
 fetch('../../../js/spells.json')
     .then(res => res.json())
     .then(data => {
@@ -39,7 +40,8 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
-                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                // link.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('href', kebabCase(spell.spell_name)); 
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -54,6 +56,7 @@ fetch('../../../js/spells.json')
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('href', kebabCase(spell.spell_name));
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -68,6 +71,7 @@ fetch('../../../js/spells.json')
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('href', kebabCase(spell.spell_name));
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -81,7 +85,8 @@ fetch('../../../js/spells.json')
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
-                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                // link.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('href', kebabCase(spell.spell_name)); 
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -95,7 +100,8 @@ fetch('../../../js/spells.json')
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
-                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                // link.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('href', kebabCase(spell.spell_name)); 
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -110,6 +116,7 @@ fetch('../../../js/spells.json')
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('href', kebabCase(spell.spell_name));
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -123,7 +130,8 @@ fetch('../../../js/spells.json')
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
-                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                // link.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('href', kebabCase(spell.spell_name)); 
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
