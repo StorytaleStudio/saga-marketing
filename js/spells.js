@@ -137,9 +137,8 @@ fetch('../../../js/spells.json')
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
-                // link.setAttribute('href', kebabCase(spell.spell_name));
-                const link = card.querySelector("[data-link]")
-                console.log(link) 
+                card.setAttribute('href', kebabCase(spell.spell_name));
+                
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
