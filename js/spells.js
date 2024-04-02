@@ -13,9 +13,9 @@ fetch('../../../js/spells.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(spell => {
-            let card = '';
+            
             if (spell.school == "illusion") {
-                card = cardTemplateIllusion.content.cloneNode(true).children[0];
+                const card = cardTemplateIllusion.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -26,7 +26,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else if (spell.school == 'evocation') {
-                card = cardTemplateEvocation.content.cloneNode(true).children[0];
+                const card = cardTemplateEvocation.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -37,7 +37,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else if (spell.school == 'abjuration') {
-                card = cardTemplateAbjuration.content.cloneNode(true).children[0];
+                const card = cardTemplateAbjuration.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -48,7 +48,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else if (spell.school == 'divination') {
-                card = cardTemplateDivination.content.cloneNode(true).children[0];
+                const card = cardTemplateDivination.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -59,7 +59,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else if (spell.school == 'enchantment') {
-                card = cardTemplateEnchantment.content.cloneNode(true).children[0];
+                const card = cardTemplateEnchantment.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -70,7 +70,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else if (spell.school == 'transmutation') {
-                card = cardTemplateTransmutation.content.cloneNode(true).children[0];
+                const card = cardTemplateTransmutation.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -81,7 +81,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else if (spell.school == 'conjuration') {
-                card = cardTemplateConjuration.content.cloneNode(true).children[0];
+                const card = cardTemplateConjuration.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
@@ -92,7 +92,7 @@ fetch('../../../js/spells.json')
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
             } else {
-                card = cardTemplateNecromancy.content.cloneNode(true).children[0];
+                const card = cardTemplateNecromancy.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
