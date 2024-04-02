@@ -8791,6 +8791,10 @@ li {
   }
 }
 
+br {
+  display: block;
+}
+
 
 @font-face {
   font-family: 'Founders grotesk';
