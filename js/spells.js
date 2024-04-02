@@ -18,8 +18,6 @@ searchInput.addEventListener("input", e=> {
         const isVisible = spell.name.toLowerCase().includes(value)
         spell.element.classList.toggle("hide", !isVisible)
     })
-    
-    console.log(spells)
 })
 
 

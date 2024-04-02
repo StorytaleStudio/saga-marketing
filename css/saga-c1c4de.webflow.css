@@ -2559,9 +2559,7 @@ li {
   display: flex;
 }
 
-.content.hide {
-  display: none;
-}
+
 
 .feature-copy {
   grid-column-gap: 16px;
@@ -5252,6 +5250,10 @@ li {
   width: 15rem;
   height: 15rem;
   position: relative;
+}
+
+.spell-item-wrapper.hide {
+  display: none;
 }
 
 .card {
