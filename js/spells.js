@@ -13,7 +13,7 @@ fetch('../../../js/spells.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(spell => {
-            const card = '';
+            let card = '';
             if (spell.school == "illusion") {
                 card = cardTemplateIllusion.content.cloneNode(true).children[0];
             } else if (spell.school == 'evocation') {
