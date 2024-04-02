@@ -13,8 +13,7 @@ fetch('../../../js/spells.json')
     .then(res => res.json())
     .then(data => {
         data.forEach(spell => {
-            
-            if (spell.school == "illusion") {
+            if (spell.school.toLowerCase() == "illusion") {
                 const card = cardTemplateIllusion.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
@@ -25,7 +24,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school == 'evocation') {
+            } else if (spell.school.toLowerCase() == 'evocation') {
                 const card = cardTemplateEvocation.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
@@ -36,7 +35,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school == 'abjuration') {
+            } else if (spell.school.toLowerCase() == 'abjuration') {
                 const card = cardTemplateAbjuration.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
@@ -47,7 +46,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school == 'divination') {
+            } else if (spell.school.toLowerCase() == 'divination') {
                 const card = cardTemplateDivination.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
@@ -58,7 +57,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school == 'enchantment') {
+            } else if (spell.school.toLowerCase() == 'Enchantment') {
                 const card = cardTemplateEnchantment.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
@@ -69,7 +68,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school == 'transmutation') {
+            } else if (spell.school.toLowerCase() == 'transmutation') {
                 const card = cardTemplateTransmutation.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
@@ -80,7 +79,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school == 'conjuration') {
+            } else if (spell.school.toLowerCase() == 'conjuration') {
                 const card = cardTemplateConjuration.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
