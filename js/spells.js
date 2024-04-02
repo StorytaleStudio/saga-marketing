@@ -10,6 +10,8 @@ const cardTemplateNecromancy = document.querySelector('[data-user-template="necr
 const spellList = document.querySelector("[data-spell-cards]")
 const searchInput = document.querySelector("[data-search]");
 
+let spells = [];
+
 searchInput.addEventListener("input", e=> {
     const value = e.target.value;
     console.log(value)
@@ -19,7 +21,7 @@ searchInput.addEventListener("input", e=> {
 fetch('../../../js/spells.json')
     .then(res => res.json())
     .then(data => {
-        data.forEach(spell => {
+        spells = data.map(spell => {
             if (spell.school.toLowerCase() == "illusion") {
                 const card = cardTemplateIllusion.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
@@ -108,6 +110,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
+                return {name: spell.spell_name, element: card}
             }
             
 
