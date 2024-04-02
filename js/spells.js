@@ -8,8 +8,10 @@ fetch('../../../js/spells.json')
             const card = cardTemplateIllusion.content.cloneNode(true).children[0];
             const name = card.querySelector("[data-name]")
             const school = card.querySelector("[data-school]")
+            const level = card.querySelector("[data-level]")
             name.textContent = spell.spell_name;
             school.textContent = spell.school;
+            level.textContent = spell.level;
             spellList.append(card)
             console.log(card)
         })
