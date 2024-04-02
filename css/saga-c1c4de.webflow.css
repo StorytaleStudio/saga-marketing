@@ -5474,7 +5474,7 @@ li {
   padding: .5rem 1.25rem;
 }
 
-.brand.spell.w--current {
+.brand.spell {
   display: none;
 }
 @media screen and (min-width: 1440px) {
@@ -6045,7 +6045,7 @@ li {
     grid-template-columns: 1fr 1fr;
   }
 
-  .stat.school, .brand.spell.w--current {
+  .stat.school, .brand.spell {
     display: block;
   }
 }

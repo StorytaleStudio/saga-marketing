@@ -64,7 +64,7 @@ fetch('../../../js/spells.json')
                 level.textContent = spell.level;
                 teaser.textContent = spell.teaser;
                 spellList.append(card)
-            } else if (spell.school.toLowerCase() == 'Enchantment') {
+            } else if (spell.school.toLowerCase() == 'enchantment') {
                 const card = cardTemplateEnchantment.content.cloneNode(true).children[0];
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
