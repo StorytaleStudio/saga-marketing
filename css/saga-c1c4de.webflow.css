@@ -2559,6 +2559,10 @@ li {
   display: flex;
 }
 
+.content.hide {
+  display: none;
+}
+
 .feature-copy {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
