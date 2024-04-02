@@ -15,11 +15,19 @@ let spells = [];
 searchInput.addEventListener("input", e=> {
     const value = e.target.value.toLowerCase();
     spells.forEach(spell => {
-        const isVisible = spell.name.toLowerCase().includes(value)
+        const isVisible = spell.name.toLowerCase().includes(value);
         spell.element.classList.toggle("hide", !isVisible)
     })
 })
 
+
+
+
+const kebabCase = string => string
+    .toLowerCase()
+    .replace(/([a-z])([A-Z])/g, "$1-$2")
+    .replace(/[\s_]+/g, '-')
+    .toLowerCase();
 
 fetch('../../../js/spells.json')
     .then(res => res.json())
@@ -31,6 +39,8 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const link = card.querySelector("[data-link]")
+                link.setAtt
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
