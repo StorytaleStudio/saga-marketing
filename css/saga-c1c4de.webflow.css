@@ -6054,6 +6054,16 @@ li {
   .stat.school, .brand.spell {
     display: block;
   }
+
+  .content {
+    border-radius: .9rem;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
