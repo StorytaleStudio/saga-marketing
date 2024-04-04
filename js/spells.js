@@ -12,6 +12,8 @@ const searchInput = document.querySelector("[data-search]");
 
 let spells = [];
 
+
+
 searchInput.addEventListener("input", e=> {
     const value = e.target.value.toLowerCase();
     spells.forEach(spell => {
@@ -21,6 +23,13 @@ searchInput.addEventListener("input", e=> {
 })
 
 
+document.addEventListener('change', () => {
+    const checkedValues = [...document.querySelectorAll('[data-checkbox]')]
+      .filter(input => input.checked)
+      .map(input => input.value);
+    const filteredStores = spells.filter(({ storeType }) => checkedValues.includes(storeType));
+    console.log(filteredStores);
+  });
 
 
 const kebabCase = string => string
