@@ -23,40 +23,15 @@ searchInput.addEventListener("input", e=> {
 })
 
 
-var allCheckboxes = document.querySelectorAll('input[type=checkbox]');
+var allCheckboxes = document.querySelectorAll('[data-checkbox]');
 var checked = {};
 
-function getChecked(name) {
-    checked[name] = Array.from(document.querySelectorAll('input[name=' + name + ']:checked')).map(function (el) {
-      return el.value;
-    });
-  }
-
-  Array.prototype.forEach.call(allCheckboxes, function (el) {
-    el.addEventListener('change', toggleCheckbox);
-  });
-  
-  function toggleCheckbox(e) {
-    getChecked(e.target.name);
-    setVisibility();
-  }
-
-  getChecked('level')
-
-  function setVisibility() {
-    spells.map(function (el) {
-      var level = checked.level.length ? _.intersection(Array.from(el.classList), checked.level).length : true;
-      var classes = checked.classes.length ? _.intersection(Array.from(el.classList), checked.classes).length : true;
-      var ritual = checked.rital.length ? _.intersection(Array.from(el.classList), checked.ritual).length : true;
-      var concentration = checked.concentration.length ? _.intersection(Array.from(el.classList), checked.concentration).length : true;
-      var category = checked.category.length ? _.intersection(Array.from(el.classList), checked.category).length : true;
-      if (level && classes && ritual && concentration && category) {
-        el.style.display = 'block';
-      } else {
-        el.style.display = 'none';
-      }
-    });
-  }
+allCheckboxes.forEach(e => {
+    e.addEventListener("click", () => {
+        const checkVal = e.querySelector("[type='checkbox']").value;
+        console.log(checkVal)
+    })
+})
 
 
 const kebabCase = string => string
