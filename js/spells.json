@@ -991,26 +991,9 @@
     "spellText": "Target either a friendly or hostile creature within range. They must make a WIS save, on a failure they receive either: 2d8 healing or 2d8 radiant damage. The spell then bounces to the nearest target within 10ft which also makes a WIS saving throw. It then bounces a third time within 10ft to the next nearest creature that hasn't been effected by this spell already. This can also target the caster, but never on the first target. If a creature successfully saves then the spell ends. A creature can choose to fail a save.",
     "higher_level": "You can add 1 additional target per spell level when cast on a 4th or higher spell slot."
 },
+
 {
     "id": "56",
-    "access": true,
-    "spell_name": "Bouncing Radiance",
-    "level": "3rd Level",
-    "category": "Control",
-    "school": "Evocation",
-    "classes": ["Wizard", "Druid"],
-    "teaser": "Hop and pop",
-    "castingTime": "1 action",
-    "concentration": false,
-    "ritual": false,
-    "range": "20ft",
-    "components": "V, S",
-    "duration": "Instantaneous",
-    "spellText": "Target either a friendly or hostile creature within range. They must make a WIS save, on a failure they receive either: 2d8 healing or 2d8 radiant damage. The spell then bounces to the nearest target within 10ft which also makes a WIS saving throw. It then bounces a third time within 10ft to the next nearest creature that hasn't been effected by this spell already. This can also target the caster, but never on the first target. If a creature successfully saves then the spell ends. A creature can choose to fail a save.",
-    "higher_level": "You can add 1 additional target per spell level when cast on a 4th or higher spell slot."
-},
-{
-    "id": "57",
     "access": true,
     "spell_name": "Zone of Lies",
     "level": "3rd Level",
@@ -1027,7 +1010,7 @@
     "spellText": "You create a magical zone that guards against deception in a 15-foot-radius sphere centred on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, when ever they tell a lie they take 3d8 radiant damage.  You know whether each creature succeeds or fails on its saving throw.<br/><br/>An affected creature is aware of the spell but cannot avoid answering questions. Such creatures can be evasive in its answers as long as it answers."
 },
 {
-    "id": "58",
+    "id": "57",
     "access": true,
     "spell_name": "Off Target",
     "level": "3rd Level",
