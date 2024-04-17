@@ -63,6 +63,7 @@ function change() {
   
   function filterResults(filters) {
     var rElems = spellList;
+    console.log(rElems)
     var hiddenElems = [];
   
     if (!rElems || rElems.length <= 0) {
@@ -71,6 +72,7 @@ function change() {
   
     for (var i = 0; i < rElems.length; i++) {
       var el = rElems[i];
+      console.log(el)
   
       if (filters.class.length > 0) {
         var isHidden = true;
