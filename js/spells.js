@@ -62,7 +62,7 @@ function change() {
   }
   
   function filterResults(filters) {
-    var rElems = spellList;
+    var rElems = document.querySelectorAll("[data-spell-cards] .spell-item-wrapper");;
     console.log(rElems)
     var hiddenElems = [];
   
