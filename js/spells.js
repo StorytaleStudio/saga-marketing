@@ -80,7 +80,7 @@ function change() {
         for (var j = 0; j < filters.class.length; j++) {
           var filter = filters.class[j];
   
-          if (el.classList.contains(filter)) {
+          if (el.getAttribute("data-filter").contains(filter)) {
             isHidden = false;
             break;
           }
@@ -97,7 +97,7 @@ function change() {
         for (var j = 0; j < filters.level.length; j++) {
           var filter = filters.level[j];
   
-          if (el.classList.contains(filter)) {
+          if (el.getAttribute("data-filter").contains(filter)) {
             isHidden = false;
             break;
           }
@@ -115,7 +115,7 @@ function change() {
         for (var j = 0; j < filters.type.length; j++) {
           var filter = filters.level[j];
   
-          if (el.classList.contains(filter)) {
+          if (el.getAttribute("data-filter").contains(filter)) {
             isHidden = false;
             break;
           }
