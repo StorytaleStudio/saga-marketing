@@ -23,15 +23,18 @@ searchInput.addEventListener("input", e=> {
 })
 
 
-var allCheckboxes = document.querySelectorAll('[data-checkbox]');
-var checked = {};
+var allCheckboxes = document.querySelectorAll('[data-checkbox onchange="checked()"]');
+var checked = [];
 
-allCheckboxes.forEach(e => {
-    e.addEventListener("click", (target) => {
-        const checkVal = target.querySelector("[type='checkbox']");
-        console.log(checkVal)
-    })
-})
+// allCheckboxes.forEach(e => {
+//     e.addEventListener("click", (target) => {
+//         const checkVal = target.querySelector("[type='checkbox']");
+//         console.log(checkVal)
+//     })
+// })
+function checked() {
+    console.log("Hey")
+}
 
 
 const kebabCase = string => string
