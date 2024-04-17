@@ -5379,6 +5379,11 @@ li {
   display: flex;
 }
 
+.spell-card > img {
+  filter:invert(100%);
+  width:2rem;
+}
+
 .heading-28 {
   text-align: center;
   text-transform: uppercase;
