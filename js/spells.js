@@ -23,8 +23,6 @@ searchInput.addEventListener("input", e=> {
 })
 
 
-var allCheckboxes = document.querySelectorAll('[data-checkbox onchange="checked()"]');
-var checked = [];
 
 // allCheckboxes.forEach(e => {
 //     e.addEventListener("click", (target) => {
