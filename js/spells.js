@@ -28,7 +28,7 @@ var checked = {};
 
 allCheckboxes.forEach(e => {
     e.addEventListener("click", () => {
-        const checkVal = e.querySelector("[type='checkbox']").value;
+        const checkVal = e.querySelector("[type='checkbox']").name;
         console.log(checkVal)
     })
 })
