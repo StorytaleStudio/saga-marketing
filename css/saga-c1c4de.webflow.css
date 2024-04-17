@@ -5379,8 +5379,7 @@ li {
   display: flex;
 }
 
-.spell-card > img {
-  filter:invert(100%) brightness(100%);
+.spell-card > svg {
   width:2rem;
 }
 
