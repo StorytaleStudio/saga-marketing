@@ -5383,6 +5383,10 @@ li {
   width:2rem;
 }
 
+.spell-card svg path {
+  fill: white;
+}
+
 .heading-28 {
   text-align: center;
   text-transform: uppercase;
