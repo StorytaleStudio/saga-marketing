@@ -5412,6 +5412,47 @@ li {
   height: .125rem;
 }
 
+[data-category="Damage Single"] .divider,
+[data-category="Damage Single"] .spell-card svg path {
+  background-color: #fa4040;
+  fill: #fa4040;
+}
+[data-category="Damage AOE"] .divider,
+[data-category="Damage Single"] .spell-card svg path {
+  background-color: #ff6600;
+  fill: #ff6600;
+}
+[data-category="Healing"] .divider,
+[data-category="Healing"] .spell-card svg path {
+  background-color: #00ffff;
+  fill: #00ffff;
+}
+
+[data-category="Movement"] .divider,
+[data-category="Movement"] .spell-card svg path {
+  background-color: #03af0c;
+  fill: #03af0c;
+}
+
+[data-category="Manipulation"] .divider,
+[data-category="Manipulation"] .spell-card svg path {
+  background-color: #df01df;
+  fill: #df01df;
+}
+
+[data-category="Knowledge"] .divider,
+[data-category="Knowledge"] .spell-card svg path {
+  background-color: #dfc901;
+  fill: #dfc901;
+}
+
+
+[data-category="Control"] .divider,
+[data-category="Control"] .spell-card svg path {
+  background-color: #3e22e0;
+  fill: #3e22e0;
+}
+
 
 
 .stats {
