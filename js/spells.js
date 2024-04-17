@@ -160,6 +160,7 @@ fetch('../../../js/spells.json')
                 const teaser = card.querySelector("[data-teaser]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -175,6 +176,7 @@ fetch('../../../js/spells.json')
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
                 card.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -191,6 +193,7 @@ fetch('../../../js/spells.json')
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
                 card.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -207,6 +210,7 @@ fetch('../../../js/spells.json')
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -223,6 +227,7 @@ fetch('../../../js/spells.json')
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -239,6 +244,7 @@ fetch('../../../js/spells.json')
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
                 card.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -255,6 +261,7 @@ fetch('../../../js/spells.json')
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
                 level.textContent = spell.level;
@@ -270,6 +277,7 @@ fetch('../../../js/spells.json')
                 const teaser = card.querySelector("[data-teaser]")
                 // const link = card.querySelector("[data-link]")
                 card.setAttribute('href', kebabCase(spell.spell_name));
+                card.setAttribute('data-filter', `${spell.ritual} ${spell.concentration} ${spell.level} ${spell.classes} ${spell.category}`)
                 
                 name.textContent = spell.spell_name;
                 school.textContent = spell.school;
