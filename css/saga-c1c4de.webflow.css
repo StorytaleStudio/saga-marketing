@@ -3369,6 +3369,7 @@ background-position: center;
   height: 5px;
   border: none;
   fill: white;
+  opacity: 0.6;
   /* color: #922610;
   fill: #922610; */
 }
@@ -3402,7 +3403,7 @@ background-position: center;
   display: inline;
   margin: 0;
   /* color: #922610; */
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   line-height: 1.2em;
 }
 
