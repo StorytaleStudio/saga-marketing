@@ -3,7 +3,7 @@
 <html data-wf-page="6604b32050bdb3ab741c8a56" data-wf-site="645c8255da9f4f0a53c334fa" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Spell Template</title>
+  <title>Martyr</title>
   <meta content="Spell Template" property="og:title">
   <meta content="Spell Template" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -57,7 +57,7 @@
               <div data-w-id="5cd7ccc9-e611-6439-147d-866f88d38c75" class="button-3 selected">
                 <div> Subclasses</div>
               </div>
-              <a href="../../../scriptorium/the-beautiful-revolution/spells/spells-home.html" class="button-3 w-button">Spells</a>
+              <a href="#" class="button-3 strike w-button">Spells</a>
               <a href="#" class="button-3 strike w-button">Items</a>
               <a href="#" class="button-3 strike w-button">Setting</a>
             </div>
@@ -254,7 +254,7 @@
 	opacity: 1;
 } 
 .subclass-menu-link .subclass-image-container {
-	transition:  1s opacity 0.4s ease-in-out:
+	transition:  1s opacity 0.4s ease-in-out;
 }
 @media screen and (min-width: 800px) {
   .subclass-menu-link:hover .subclass-image-container {
@@ -427,15 +427,31 @@
       </nav>
     </div>
   </div>
-  <section class="section-5">
-    <div class="spell-card"><img src="../../../images/aperture.svg" loading="lazy" alt="">
-      <h1 class="heading-28">You Or I</h1>
-      <h2 class="heading-29">“Sometimes fate comes down to a flip of a coin.”</h2>
+  <section class="section-5" data-category="Healing">
+    <div class="spell-card">
+      
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CF4A00;}
+	.st1{fill:#231F20;}
+	.st2{fill:none;stroke:#231F20;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#231F20;stroke-width:2;stroke-linecap:round;stroke-miterlimit:1;stroke-dasharray:5.9888,4.9907;}
+</style>
+<path class="st1" d="M13.5,7H9V2.5c0-0.55-0.45-1-1-1s-1,0.45-1,1V7H2.5c-0.55,0-1,0.45-1,1s0.45,1,1,1H7v4.5c0,0.55,0.45,1,1,1
+	s1-0.45,1-1V9h4.5c0.55,0,1-0.45,1-1S14.05,7,13.5,7z"/>
+</svg>
+      
+
+      <h1 class="heading-28">Martyr</h1>
+      <h2 class="heading-29">“For the cause”</h2>
       <div class="divider"></div>
       <div class="stats">
         <div id="w-node-_15095950-93a7-004b-09f2-7fa871e863aa-741c8a56" class="stat">
           <h3 class="heading-30">Level</h3>
-          <div class="text-block-31">9th</div>
+          <div class="text-block-31">5th Level</div>
         </div>
         <div id="w-node-_9b4ab0e5-3968-f349-f578-55a379fd2e3c-741c8a56" class="stat casting">
           <h3 class="heading-30">Casting time</h3>
@@ -443,27 +459,36 @@
         </div>
         <div id="w-node-fc740dbd-0dd5-9ba5-c6a6-1cda136d0388-741c8a56" class="stat range">
           <h3 class="heading-30">Range</h3>
-          <div class="text-block-31">20ft</div>
+          <div class="text-block-31">30ft</div>
         </div>
         <div id="w-node-_0eed3d14-7c4c-2632-5eba-48382e5c73bd-741c8a56" class="stat components">
           <h3 class="heading-30">Components</h3>
-          <div class="text-block-31">V,S,M</div>
+          <div class="text-block-31">V</div>
         </div>
         <div id="w-node-_066ba1e4-bc9e-6d36-fdd1-95deb9274258-741c8a56" class="stat duration">
           <h3 class="heading-30">Duration</h3>
-          <div class="text-block-31">Instantaneous</div>
+          <div class="text-block-31">2 rounds</div>
         </div>
         <div id="w-node-_4f5062bf-b0ae-2932-b192-9688fc717f1f-741c8a56" class="stat school">
           <h3 class="heading-30">School</h3>
           <div class="text-block-31">Evocation</div>
         </div>
       </div>
-      <p class="spell-text">You target a creature, they make a WIS saving throw, on a failure you flip a coin, heads you die, tails the creature dies. On a success, you instead take <strong>12d6 force damage</strong>. The result of the coin flip cannot be altered or changed in any way, even by wish or divine intervention.</p>
-      <div class="text-block-32">Material Components: A copper coin</div>
+      <p class="spell-text">You select 2 willing creatures, until the start of your next round all damage taken by those creatures is dealt to you instead. If you are knocked unconscious by this damage, at the start your next round you Heal, if you are not knocked unconscious , you choose a single target and Harm.<br/><br/><em>Heal:</em> You heal half the chosen creatures half the damage you have taken. <br/><br/><em>Harm:</em> You harm a single creature within range of you, they take half the damage taken.</p>
+      
+      <!--  -->
+      
+      
+        <div class="text-block-32"><strong>Higher Level:</strong> When cast at levels at 6th level or above, add an additional willing creature per level. </div>
+      
+      
       <div class="tag-group">
-        <div class="tag">Bard</div>
+        
+        <div class="tag">Druid</div>
+        
         <div class="tag">Cleric</div>
-        <div class="tag">Damage Single</div>
+        
+        <div class="tag">Healing</div>
       </div>
     </div>
   </section>
