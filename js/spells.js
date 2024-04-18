@@ -42,7 +42,6 @@ function change() {
     };
   
     filterResults(filters);
-    console.log(filters)
   }
   
   function getClassOfCheckedCheckboxes(checkboxes) {
@@ -63,7 +62,6 @@ function change() {
   
   function filterResults(filters) {
     var rElems = document.querySelectorAll("[data-spell-cards] .spell-item-wrapper");;
-    console.log(rElems)
     var hiddenElems = [];
   
     if (!rElems || rElems.length <= 0) {
