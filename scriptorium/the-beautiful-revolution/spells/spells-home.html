@@ -930,8 +930,11 @@ ScrollTrigger.create({
   trigger: ".spell-list",
   start: "top top",
   end: "bottom bottom",
-  onEnter: () => showAnim.play(),
-  onLeaveBack: () => showAnim.reverse(),
+  onUpdate: (self) => {
+    self.direction === -1 ? showAnim.play() : showAnim.reverse()
+  }
+  // onEnter: () => showAnim.play(),
+  // onLeaveBack: () => showAnim.reverse(),
 });
 
 </script>
