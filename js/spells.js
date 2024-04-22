@@ -58,7 +58,7 @@ function change() {
     };
   
     filterResults(filters);
-    console.log(filters)
+    // console.log(filters)
   }
   
   function getClassOfCheckedCheckboxes(checkboxes) {
