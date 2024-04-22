@@ -200,8 +200,32 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="evo-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FFBA09"></stop>
+                  <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#F93F3F"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#evo-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="evo-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FFBA09"></stop>
+                  <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#F93F3F"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#evo-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 card.setAttribute('href', kebabCase(spell.spell_name));
                 const ritualYes = spell.ritual == true ? "Ritual" : " "; 
                 const conYes = spell.concentration == true ? "Concentration" : " "; 
@@ -218,7 +242,33 @@ fetch('../../../js/spells.json')
                 const name = card.querySelector("[data-name]")
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
-                const teaser = card.querySelector("[data-teaser]")
+                const teaser = card.querySelector("[data-teaser]")                
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
+                // const link = card.querySelector("[data-link]")
+                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="abj-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#D940FF"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#002FA9"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#abj-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="abj-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#D940FF"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#002FA9"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#abj-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
                 card.setAttribute('href', kebabCase(spell.spell_name));
@@ -238,6 +288,32 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
+                // const link = card.querySelector("[data-link]")
+                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="div-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#40FF98"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#00FFF0"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#div-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="div-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#40FF98"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#00FFF0"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#div-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
@@ -257,6 +333,32 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
+                // const link = card.querySelector("[data-link]")
+                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="ench-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FF6240"></stop>
+              <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#FF00E5"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#ench-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="ench-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FF6240"></stop>
+              <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#FF00E5"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#ench-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
@@ -276,6 +378,32 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
+                // const link = card.querySelector("[data-link]")
+                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="trans-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FFE040"></stop>
+              <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#FF9900"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#trans-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="trans-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FFE040"></stop>
+              <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#FF9900"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#trans-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name)); 
                 card.setAttribute('href', kebabCase(spell.spell_name));
@@ -295,6 +423,32 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
+                // const link = card.querySelector("[data-link]")
+                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="con-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FFA740"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#FFE923"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#con-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="con-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#FFA740"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#FFE923"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#con-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 // const link = card.querySelector("[data-link]")
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 card.setAttribute('href', kebabCase(spell.spell_name)); 
@@ -314,6 +468,32 @@ fetch('../../../js/spells.json')
                 const school = card.querySelector("[data-school]")
                 const level = card.querySelector("[data-level]")
                 const teaser = card.querySelector("[data-teaser]")
+                const border = card.querySelector(".gradient-border")
+                const bgBlur = card.querySelector(".background-blur")
+                // const link = card.querySelector("[data-link]")
+                // link.setAttribute('href', kebabCase(spell.spell_name)); 
+                border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="nec-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#D9FF40"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#08CA79"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#nec-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
+              bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
+                <defs>
+                  <lineargradient id="nec-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#D9FF40"></stop>
+                <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#08CA79"></stop>
+                  </lineargradient>
+                </defs>
+                <g id="eALyGup1cVD2_to" transform="translate(640,360)">
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#nec-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
+                </g>
+              </svg>`
                 // const link = card.querySelector("[data-link]")
                 card.setAttribute('href', kebabCase(spell.spell_name));
                 const ritualYes = spell.ritual == true ? "Ritual" : " "; 
