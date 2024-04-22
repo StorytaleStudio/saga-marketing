@@ -16,6 +16,7 @@ let spells = [];
 
 searchInput.addEventListener("input", e=> {
     const value = e.target.value.toLowerCase();
+    console.log(spells)
     spells.forEach(spell => {
         const isVisible = spell.name.toLowerCase().includes(value);
         spell.element.classList.toggle("hide", !isVisible)
