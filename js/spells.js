@@ -162,24 +162,24 @@ fetch('../../../js/spells.json')
                 // link.setAttribute('href', kebabCase(spell.spell_name));
                 border.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
                 <defs>
-                  <lineargradient id="ill-fill-${spell.spell_name}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <lineargradient id="ill-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
                     <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#AB40FF"></stop>
                     <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#00F0FF"></stop>
                   </lineargradient>
                 </defs>
                 <g id="eALyGup1cVD2_to" transform="translate(640,360)">
-                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#ill-fill-${spell.spell_name})" stroke-width="0"></rect>
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#ill-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
                 </g>
               </svg>`
               bgBlur.innerHTML = `<svg id="eALyGup1cVD1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 720" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="">
                 <defs>
-                  <lineargradient id="ill-fill-${spell.spell_name}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
+                  <lineargradient id="ill-fill-${kebabCase(spell.spell_name)}" x1="0" y1="0.5" x2="1" y2="0.5" spreadmethod="pad" gradientunits="objectBoundingBox" gradienttransform="translate(0 0)">
                     <stop id="eALyGup1cVD2-fill-0" offset="0%" stop-color="#AB40FF"></stop>
                     <stop id="eALyGup1cVD2-fill-1" offset="100%" stop-color="#00F0FF"></stop>
                   </lineargradient>
                 </defs>
                 <g id="eALyGup1cVD2_to" transform="translate(640,360)">
-                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#ill-fill-${spell.spell_name})" stroke-width="0"></rect>
+                  <rect width="2492.099859" height="2223.719874" rx="0" ry="0" transform="scale(0.820545,1) translate(-1246.049942,-1111.859937)" fill="url(#ill-fill-${kebabCase(spell.spell_name)})" stroke-width="0"></rect>
                 </g>
               </svg>`
 
