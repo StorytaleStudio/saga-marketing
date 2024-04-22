@@ -5488,6 +5488,7 @@ background-position: center;
   grid-row-gap: .5rem;
   flex-flow: column;
   display: flex;
+  background: linear-gradient(#111 90%, rgba(0, 0, 0, 0));
 }
 
 .text-field {
@@ -5638,6 +5639,7 @@ background-position: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  height: 20rem;
 }
 
 .section-5 {
@@ -6370,6 +6372,7 @@ background-position: center;
 
   .form-block-2 {
     padding-top: 9rem;
+    height: 16rem;
   }
 
   .section-5 {
