@@ -495,7 +495,7 @@
               <div class="w-checkbox-input w-checkbox-input--inputType-custom button-check"></div><input type="checkbox" data-checkbox onchange="change()" name="Ritual" id="Ritual" data-name="Ritual" style="opacity:0;position:absolute;z-index:-1"><span class="button-label w-form-label" for="Ritual">Ritual</span>
             </label><label class="w-checkbox checkbox-button">
               <div class="w-checkbox-input w-checkbox-input--inputType-custom button-check"></div><input type="checkbox" data-checkbox onchange="change()" name="Concentration" id="Concentration" data-name="Concentration" style="opacity:0;position:absolute;z-index:-1"><span class="button-label w-form-label" for="Concentration">Concentration</span>
-            </label><select id="Level" name="Level" data-name="Level" class="mobile-select w-select">
+            </label><select id="Level" name="Level" data-name="Level" class="mobile-select w-select mobile-level" onchange="mobChange()">
               <option value="">Level</option>
               <option value="Cantrip">Cantrip</option>
               <option value="1st">1st</option>
@@ -526,7 +526,7 @@
               <div class="w-checkbox-input w-checkbox-input--inputType-custom button-check"></div><input type="checkbox" data-checkbox onchange="change()" name="Warlock" id="Warlock" data-name="Warlock" style="opacity:0;position:absolute;z-index:-1"><span class="button-label w-form-label" for="Warlock">Warlock</span>
             </label><label class="w-checkbox checkbox-button">
               <div class="w-checkbox-input w-checkbox-input--inputType-custom button-check"></div><input type="checkbox" data-checkbox onchange="change()" name="Wizard" id="Wizard" data-name="Wizard" style="opacity:0;position:absolute;z-index:-1"><span class="button-label w-form-label" for="Wizard">Wizard</span>
-            </label><select id="Class" name="Class" data-name="Class" class="mobile-select w-select">
+            </label><select id="Class" name="Class" data-name="Class" class="mobile-select w-select mobile-class" onchange="mobChange()">
               <option value="">Class</option>
               <option value="Bard">Bard</option>
               <option value="Druid">Druid</option>
@@ -550,7 +550,7 @@
               <div class="w-checkbox-input w-checkbox-input--inputType-custom button-check"></div><input type="checkbox" data-checkbox onchange="change()" name="Movement" id="Movement" data-name="Movement" style="opacity:0;position:absolute;z-index:-1"><span class="button-label w-form-label" for="Movement">Movement</span>
             </label><label class="w-checkbox checkbox-button">
               <div class="w-checkbox-input w-checkbox-input--inputType-custom button-check"></div><input type="checkbox" data-checkbox onchange="change()" name="Healing" id="Healing" data-name="Healing" style="opacity:0;position:absolute;z-index:-1"><span class="button-label w-form-label" for="Healing">Healing</span>
-            </label><select id="Type" name="Type" data-name="Type" class="mobile-select w-select">
+            </label><select id="Type" name="Type" data-name="Type" class="mobile-select w-select mobile-type" onchange="mobChange()">
               <option value="">Type</option>
               <option value="Control">Control</option>
               <option value="Damage AOE">Damage AOE</option>

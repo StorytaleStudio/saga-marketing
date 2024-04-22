@@ -31,6 +31,21 @@ searchInput.addEventListener("input", e=> {
 //         console.log(checkVal)
 //     })
 // })
+
+function mobChange() {
+  var mobLevelCbs = document.querySelectorAll(".mobile-level");
+  var mobClassCbs = document.querySelectorAll(".mobile-class");
+  var mobTypeCbs = document.querySelectorAll(".mobile-type");
+  var mobFilters = {
+    level: mobLevelCbs.value,
+    class: mobClassCbs.value,
+    type: mobTypeCbs.value
+
+  };
+  filterResults(mobFilters);
+}
+
+
 function change() {
     var levelCbs = document.querySelectorAll(".level-wrapper input[type='checkbox']");
     var classCbs = document.querySelectorAll(".class-wrapper input[type='checkbox']");
