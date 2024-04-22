@@ -922,15 +922,15 @@ const showAnim = gsap.to('.checkbox-wrapper', {
   opacity: 0,
   paused: true,
   duration: 0.1
-}).progress(1);
+}).progress(0);
 
 
 ScrollTrigger.create({
   trigger: ".spell-list",
   start: "top top",
   end: "bottom bottom",
- onEnter: () => showAnim.play(),
-  onLeaveBack: () => showAnim.reverse(),
+  onEnter: () => showAnim.reverse(),
+  onLeaveBack: () => showAnim.play(),
 });
 
 </script>
