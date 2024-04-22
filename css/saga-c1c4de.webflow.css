@@ -5523,7 +5523,7 @@ background-position: center;
 }
 
 .spell-item-wrapper.hide {
-  display: none;
+  display: none !important;
 }
 
 .card {
