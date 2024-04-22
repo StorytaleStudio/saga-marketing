@@ -5715,12 +5715,17 @@ background-position: center;
 [data-category="Damage AOE"] .divider,
 [data-category="Damage AOE"] .spell-card svg path,
 [data-category="Damage AOE"] .spell-card svg circle,
-[data-category="Damage AOE"] .spell-card svg line,
-[data-category="Damage AOE"] .spell-card svg ellipse {
+[data-category="Damage AOE"] .spell-card svg line{
   background-color: #ff6600;
   fill: #ff6600;
   stroke: #ff6600;
 }
+
+[data-category="Damage AOE"] .spell-card svg ellipse {
+  background-color: #ff6600;
+  stroke: #ff6600;
+}
+
 [data-category="Healing"] .divider,
 [data-category="Healing"] .spell-card svg path,
 [data-category="Healing"] .spell-card svg circle {
