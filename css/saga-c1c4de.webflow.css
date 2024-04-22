@@ -5575,6 +5575,7 @@ background-position: center;
   hyphenate-limit-lines: 2;
   hyphenate-limit-last: always;   
   hyphenate-limit-zone: 8%;
+  word-break: break-word;
 }
 
 .teaser {
