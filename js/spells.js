@@ -33,13 +33,13 @@ searchInput.addEventListener("input", e=> {
 // })
 
 function mobChange() {
-  var mobLevelCbs = document.querySelectorAll(".mobile-level");
-  var mobClassCbs = document.querySelectorAll(".mobile-class");
-  var mobTypeCbs = document.querySelectorAll(".mobile-type");
+  var mobLevelCbs = document.querySelector(".mobile-level");
+  var mobClassCbs = document.querySelector(".mobile-class");
+  var mobTypeCbs = document.querySelector(".mobile-type");
   var mobFilters = {
-    level: mobLevelCbs.value,
-    class: mobClassCbs.value,
-    type: mobTypeCbs.value
+    level: [mobLevelCbs.value],
+    class: [mobClassCbs.value],
+    type: [mobTypeCbs.value]
 
   };
   filterResults(mobFilters);
