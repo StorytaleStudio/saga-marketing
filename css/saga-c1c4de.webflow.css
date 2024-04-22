@@ -5718,6 +5718,7 @@ background-position: center;
 [data-category="Damage AOE"] .spell-card svg line {
   background-color: #ff6600;
   fill: #ff6600;
+  stroke: #ff6600;
 }
 [data-category="Healing"] .divider,
 [data-category="Healing"] .spell-card svg path,
