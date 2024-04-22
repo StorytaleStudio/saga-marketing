@@ -5585,6 +5585,7 @@ background-position: center;
  -moz-hyphens: auto;
  -ms-hyphens: auto;
  hyphens: auto;
+ margin-top: 1.55rem;
 }
 
 .teaser {
@@ -5713,7 +5714,8 @@ background-position: center;
 }
 [data-category="Damage AOE"] .divider,
 [data-category="Damage AOE"] .spell-card svg path,
-[data-category="Damage AOE"] svg circle {
+[data-category="Damage AOE"] .spell-card svg circle,
+[data-category="Damage AOE"] .spell-card svg line {
   background-color: #ff6600;
   fill: #ff6600;
 }
