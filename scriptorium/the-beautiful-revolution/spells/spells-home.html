@@ -929,7 +929,7 @@ const showAnim = gsap.to('.checkbox-wrapper', {
 ScrollTrigger.create({
   trigger: ".spell-list",
   start: "top top",
-  end: "bottom bottom",
+  end: "max",
   onUpdate: (self) => {
     console.log(self.direction)
     self.direction === -1 ? showAnim.reverse() : showAnim.play()
