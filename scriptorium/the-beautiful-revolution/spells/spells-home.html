@@ -931,7 +931,7 @@ ScrollTrigger.create({
   start: "top top",
   end: "bottom bottom",
   onUpdate: (self) => {
-    self.direction === -1 ? showAnim.play() : showAnim.reverse()
+    self.direction === 1 ? showAnim.play() : showAnim.reverse()
   }
   // onEnter: () => showAnim.play(),
   // onLeaveBack: () => showAnim.reverse(),
