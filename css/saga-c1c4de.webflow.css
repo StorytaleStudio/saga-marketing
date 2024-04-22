@@ -5699,42 +5699,49 @@ background-position: center;
 }
 
 [data-category="Damage Single"] .divider,
-[data-category="Damage Single"] .spell-card svg path {
+[data-category="Damage Single"] .spell-card svg path,
+[data-category="Damage Single"] .spell-card svg circle {
   background-color: #fa4040;
   fill: #fa4040;
 }
 [data-category="Damage AOE"] .divider,
-[data-category="Damage AOE"] .spell-card svg path {
+[data-category="Damage AOE"] .spell-card svg path,
+[data-category="Damage AOE"] svg circle {
   background-color: #ff6600;
   fill: #ff6600;
 }
 [data-category="Healing"] .divider,
-[data-category="Healing"] .spell-card svg path {
+[data-category="Healing"] .spell-card svg path,
+[data-category="Healing"] .spell-card svg circle {
   background-color: #00ffff;
   fill: #00ffff;
 }
 
 [data-category="Movement"] .divider,
-[data-category="Movement"] .spell-card svg path {
+[data-category="Movement"] .spell-card svg path,
+[data-category="Movement"] .spell-card svg circle {
   background-color: #03af0c;
   fill: #03af0c;
 }
 
 [data-category="Manipulation"] .divider,
-[data-category="Manipulation"] .spell-card svg path {
+[data-category="Manipulation"] .spell-card svg path,
+[data-category="Manipulation"] .spell-card svg circle {
   background-color: #df01df;
   fill: #df01df;
 }
 
 [data-category="Knowledge"] .divider,
-[data-category="Knowledge"] .spell-card svg path {
+[data-category="Knowledge"] .spell-card svg path,
+[data-category="Knowledge"] .spell-card svg circle {
   background-color: #dfc901;
   fill: #dfc901;
 }
 
 
 [data-category="Control"] .divider,
-[data-category="Control"] .spell-card svg path {
+[data-category="Control"] .spell-card svg path,
+[data-category="Control"] .spell-card svg circle {
   background-color: #3e22e0;
   fill: #3e22e0;
 }
