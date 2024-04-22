@@ -128,7 +128,7 @@ function change() {
         var isHidden = true;
   
         for (var j = 0; j < filters.type.length; j++) {
-          var filter = filters.level[j];
+          var filter = filters.type[j];
   
           if (el.getAttribute("data-filter").includes(filter)) {
             isHidden = false;
