@@ -4552,6 +4552,7 @@ background-position: center;
   align-items: center;
   justify-items: center;
   display: grid;
+  z-index: 1;
 }
 
 .light {
