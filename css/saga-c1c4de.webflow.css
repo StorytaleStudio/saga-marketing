@@ -5113,7 +5113,7 @@ background-position: center;
 
 .subclass-card-image {
   height: 100%;
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   object-fit: cover;
   transition: all .4s ease-in-out;
 }
