@@ -1268,12 +1268,11 @@
     "castingTime": "1 action",
     "concentration": true,
     "ritual": false,
-    "range": "10ft",
+    "range": "30ft",
     "components": "V, S, M",
-    "material_components": "A leather bound tome",
-    "duration": "Concentration, up to 8 hours",
-    "spellText": "Target a willing creature, you give them an informative lecture that share your knowledge with the target. At the end of casting, you choose one of the abilities you are proficient in, the target now uses your modifier for that ability for the spell duration.",
-    "higher_level": "When cast at 6th level or above, you can target an additional creature to share your knowledge with for each level above 6."
+    "material_components": "A cut of your hair",
+    "duration": "Concentration, up to 1 hours",
+    "spellText": "You target a creature WIS saving throw, they may choose to fail. On a failed save they take on your current appearance and voice. They are not aware that they are not aware that this has occurred, believing themselves to look and sound like themselves. On a success, they know a spell has been cast on them and that it failed. Creatures that know the target gain advantage on Investigation Ability Checks to see through the disguise."
 },
 {
     "id": "72",
