@@ -794,6 +794,8 @@ li {
   display: block;
 }
 
+.select-field option,
+.select-field-2 option,
 .select-field-3 option {
   background: #000;
 }
