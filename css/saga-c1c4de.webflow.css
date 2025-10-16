@@ -794,6 +794,10 @@ li {
   display: block;
 }
 
+.select-field-3 option {
+  background: #000;
+}
+
 .field-label-2, .field-label-3 {
   opacity: .4;
   margin-bottom: -.5rem;
